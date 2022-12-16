@@ -1,10 +1,14 @@
 import React from 'react'
+import Profil from '../../assets/profil.jpeg'
 import '../../styles/header.css'
 import '../textScramble/'
 
 function Header() {
   return (
     <header>
+      <div className="divProfil">
+        <img src={Profil} alt="profil" className="profilHeader" />
+      </div>
       <nav className="navHeader">
         {' '}
         <ul className="ulHeader">
@@ -15,9 +19,9 @@ function Header() {
         </ul>
       </nav>
       <div className="containerTextIcone">
-        <div className="containerTextHeader">
+        <div className="containerTextHeader slit-in-horizontal">
           <div className="containerTitleHeader">
-            <p className="bonjour">Bonjour, </p>
+            <p className="bonjour">Bonjour,</p>
             <section className="animation">
               <div className="first">
                 <div>Madame</div>
@@ -25,14 +29,16 @@ function Header() {
               <div className="second">
                 <div>Monsieur</div>
               </div>
+              <div className="third">
+                <div>Madame</div>
+              </div>
             </section>
           </div>
-          <p className="textHeader typing-text">
+          <p className="textHeader">
             {' '}
-            Je m'appelle Yanguel, <br />
             Je suis développeur intégrateur web et je vais vous présenter dans
-            ce portfolio mes réalisations ainsi que mes compétences dans le
-            développement web. <br />
+            ce portfolio mes réalisations ainsi que mes compétences actuels dans
+            le développement web. <br />
             Je vous souhaite une bonne visite.
           </p>
         </div>

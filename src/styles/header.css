@@ -1,8 +1,10 @@
+@font-face {
+  font-family: 'AbrilFatFace';
+  src: url(../styles/fonts/AbrilFatface-Regular.ttf);
+}
 header {
   background-image: url(../assets/pc-portable.jpg);
-  background-repeat: no-repeat;
   object-fit: cover;
-  width: 100%;
   color: white;
   height: 40.625rem;
   background-position: center;
@@ -12,12 +14,37 @@ header {
   flex-direction: column;
   align-items: center;
   position: relative;
+  padding: 0px 15px 0px 15px;
 }
+.divProfil {
+  position: absolute;
+  left: 5%;
+  top: 40%;
+}
+
+.profilHeader {
+  --s: 110px;
+  --b: 8px;
+  --g: 15px;
+  --c: #03a9f4;
+
+  width: var(--s);
+  outline: calc(var(--s) / 2) solid rgba(0, 0, 0, 0.308);
+  outline-offset: calc(var(--s) / -2);
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+}
+.profilHeader:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: var(--g);
+}
+
 ul > li {
   padding: 10px;
 }
 ul > li:hover {
-  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #03a9f4);
   border-radius: 30px;
   text-transform: uppercase;
   text-align: center;
@@ -31,6 +58,8 @@ ul > li:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .name {
   text-decoration: underline;
@@ -50,15 +79,14 @@ ul > li:hover {
 }
 .textHeader {
   margin: auto;
-  font-weight: 300;
-  animation: lights 5s 750ms linear infinite;
   font-size: 20px;
+  margin-top: 30px;
 }
 .containerTextHeader {
   padding-bottom: 30px;
   padding-top: 30px;
 }
-/*----------BLUR NAVBAR--------------*/
+/*----------BLUR--------------*/
 
 .navHeader,
 .containerTextHeader {
@@ -73,7 +101,44 @@ ul > li:hover {
   border-radius: 24px;
 }
 
-/*------------------*/
+/*-------    -----------*/
+.slit-in-horizontal {
+  -webkit-animation: slit-in-horizontal 1s ease-out both;
+  animation: slit-in-horizontal 1s ease-out both;
+}
+@-webkit-keyframes slit-in-horizontal {
+  0% {
+    -webkit-transform: translateZ(-800px) rotateX(90deg);
+    transform: translateZ(-800px) rotateX(90deg);
+    opacity: 0;
+  }
+  54% {
+    -webkit-transform: translateZ(-160px) rotateX(87deg);
+    transform: translateZ(-160px) rotateX(87deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotateX(0);
+    transform: translateZ(0) rotateX(0);
+  }
+}
+@keyframes slit-in-horizontal {
+  0% {
+    -webkit-transform: translateZ(-800px) rotateX(90deg);
+    transform: translateZ(-800px) rotateX(90deg);
+    opacity: 0;
+  }
+  54% {
+    -webkit-transform: translateZ(-160px) rotateX(87deg);
+    transform: translateZ(-160px) rotateX(87deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotateX(0);
+    transform: translateZ(0) rotateX(0);
+  }
+}
+
 /* ---- BONJOUR MADAME MONSIEUR------ */
 
 .bonjour {
@@ -82,6 +147,7 @@ ul > li:hover {
   margin: 0;
 }
 .containerTitleHeader {
+  font-family: AbrilFatFace;
   font-size: 2.26rem;
   text-transform: uppercase;
   display: flex;
@@ -108,12 +174,14 @@ ul > li:hover {
 }
 
 .first div {
-  background-color: #20a7d8;
+  background-color: #f441a5;
 }
 .second div {
-  background-color: #cd921e;
+  background-color: #03a9f4;
 }
-
+.third div {
+  background-color: #f441a5;
+}
 @keyframes text-animation {
   0% {
     margin-top: 0;
@@ -148,164 +216,6 @@ ul > li:hover {
 }
 /* ---*/
 
-/* --------LETTRAGE NIGHT ---------*/
-@keyframes lights {
-  0% {
-    color: hsl(230, 40%, 80%);
-    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
-      0 0 0.125em hsla(320, 100%, 60%, 0.3),
-      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
-  }
-
-  30% {
-    color: hsl(230, 80%, 90%);
-    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
-      0 0 0.125em hsla(320, 100%, 60%, 0.5),
-      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
-      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
-  }
-
-  40% {
-    color: hsl(230, 100%, 95%);
-    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
-      0 0 0.125em hsla(320, 100%, 90%, 0.5),
-      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
-      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
-  }
-
-  70% {
-    color: hsl(230, 80%, 90%);
-    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
-      0 0 0.125em hsla(320, 100%, 60%, 0.5),
-      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
-      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
-  }
-
-  100% {
-    color: hsl(230, 40%, 80%);
-    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
-      0 0 0.125em hsla(320, 100%, 60%, 0.3),
-      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
-  }
-}
-
-/* -----------------*/
-
-@-o-keyframes opacity {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes change {
-  0%,
-  12.66%,
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-  16.66%,
-  29.32% {
-    transform: translate3d(0, -25%, 0);
-  }
-  33.32%,
-  45.98% {
-    transform: translate3d(0, -50%, 0);
-  }
-  49.98%,
-  62.64% {
-    transform: translate3d(0, -75%, 0);
-  }
-  66.64%,
-  79.3% {
-    transform: translate3d(0, -50%, 0);
-  }
-  83.3%,
-  95.96% {
-    transform: translate3d(0, -25%, 0);
-  }
-}
-
-@-moz-keyframes opacity {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes change {
-  0%,
-  12.66%,
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-  16.66%,
-  29.32% {
-    transform: translate3d(0, -25%, 0);
-  }
-  33.32%,
-  45.98% {
-    transform: translate3d(0, -50%, 0);
-  }
-  49.98%,
-  62.64% {
-    transform: translate3d(0, -75%, 0);
-  }
-  66.64%,
-  79.3% {
-    transform: translate3d(0, -50%, 0);
-  }
-  83.3%,
-  95.96% {
-    transform: translate3d(0, -25%, 0);
-  }
-}
-
-@keyframes opacity {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-@keyframes change {
-  0%,
-  12.66%,
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-  16.66%,
-  29.32% {
-    transform: translate3d(0, -25%, 0);
-  }
-  33.32%,
-  45.98% {
-    transform: translate3d(0, -50%, 0);
-  }
-  49.98%,
-  62.64% {
-    transform: translate3d(0, -75%, 0);
-  }
-  66.64%,
-  79.3% {
-    transform: translate3d(0, -50%, 0);
-  }
-  83.3%,
-  95.96% {
-    transform: translate3d(0, -25%, 0);
-  }
-}
 /*------*/
 
 .slide-bottom {
@@ -335,25 +245,3 @@ ul > li:hover {
     transform: translateY(100px);
   }
 }
-
-/* The typing effect 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* The typewriter cursor effect 
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: grey;
-  }
-}
-*/
