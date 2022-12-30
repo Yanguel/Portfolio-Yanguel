@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../styles/quisuisje.css'
+import CV from '../../assets/CVYanguelCornillet.pdf'
 function QuiSuisJe() {
   return (
     <section className="containerQuiSuisJe">
@@ -13,7 +14,9 @@ function QuiSuisJe() {
         Dans la suite de ce portfolio vous allez découvrire mes réalisations
         ainsi que mes compétences dans le développement web.
       </p>
-      <p> télécharger mon CV </p>
+      <a href={CV} download>
+        <button className="btnCV"> télécharger mon CV </button>
+      </a>
     </section>
   )
 }

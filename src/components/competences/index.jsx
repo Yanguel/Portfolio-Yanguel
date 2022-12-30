@@ -22,11 +22,13 @@ function Competences() {
             <img src={Html} alt="logo Html" className="sizeLogo"></img>
             <span className="littleMargin">Html </span>
             <div className="barre"></div>
+            80%
           </div>
           <div className="css">
             <img src={Css} alt="logo Css" className="sizeLogo"></img>
             <span className="littleMargin">Css </span>
             <div className="barre"></div>
+            65%
           </div>
           <div className="javascript">
             <img
@@ -36,21 +38,25 @@ function Competences() {
             ></img>
             <span className="littleMargin">Javascript </span>
             <div className="barre"></div>
+            60%
           </div>
           <div className="sass">
             <img src={Sass} alt="logo Sass" className="sizeLogo"></img>
             <span className="littleMargin">Sass</span>
             <div className="barre"></div>
+            90%
           </div>
           <div className="react">
             <img src={React} alt="logo React" className="sizeLogo"></img>
             <span className="littleMargin"> React </span>
             <div className="barre"></div>
+            90%
           </div>
           <div className="nodejs">
             <img src={NodeJs} alt="logo NodeJs" className="sizeLogo node"></img>
             <span className="littleMargin">Node.js </span>
             <div className="barre"></div>
+            60%
           </div>
         </div>
 
@@ -64,6 +70,7 @@ function Competences() {
             ></img>
             <span className="littleMargin">Photoshop</span>
             <div className="barre"></div>
+            60%
           </div>
           <div className="postman">
             <img
@@ -73,16 +80,19 @@ function Competences() {
             ></img>
             <span className="littleMargin">Postman </span>
             <div className="barre"></div>
+            80%
           </div>
           <div className="figma">
             <img src={Figma} alt="logo Figma" className="sizeLogo"></img>
             <span className="littleMargin"> Figma </span>
             <div className="barre"></div>
+            90%
           </div>
           <div className="insomnia">
             <img src={Insomnia} alt="logo Insomnia" className="sizeLogo"></img>
             <span className="littleMargin">Insomnia </span>
             <div className="barre"></div>
+            80%
           </div>
           <div className="mongoDB">
             <img
@@ -92,6 +102,7 @@ function Competences() {
             ></img>
             <span className="littleMargin">MongoDB</span>
             <div className="barre"></div>
+            80%
           </div>
           <div className="github">
             <img
@@ -101,6 +112,7 @@ function Competences() {
             ></img>
             <span className="littleMargin">Github </span>
             <div className="barre"></div>
+            90%
           </div>
         </div>
       </div>

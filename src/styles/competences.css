@@ -37,6 +37,11 @@
   width: 48px;
   height: 48px;
 }
+.githubLogo,
+.mongodb {
+  height: 38px;
+  width: 50px;
+}
 .html,
 .css,
 .javascript,
@@ -62,4 +67,5 @@
   background-color: white;
   width: 70%;
   height: 25px;
+  margin-right: 10px;
 }
