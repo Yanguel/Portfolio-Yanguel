@@ -1,0 +1,65 @@
+.containerCompetences {
+  background-color: black;
+  color: white;
+  padding: 30px;
+}
+.competences {
+  display: flex;
+  justify-content: space-around;
+}
+
+.titleCompetences {
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-decoration: underline;
+  font-size: 24px;
+  text-align: center;
+}
+.titleTechnologies,
+.titleAutres {
+  text-align: center;
+}
+.containerTechnologies,
+.containerDesign,
+.containerAutres {
+  background: rgb(3, 169, 244);
+  background: linear-gradient(
+    45deg,
+    rgba(3, 169, 244, 0.5) 0%,
+    rgba(47, 47, 47, 0.5) 41%,
+    rgba(244, 65, 165, 0.5) 60%,
+    rgba(3, 169, 244, 0.5) 87%
+  );
+  border-radius: 20px;
+  width: 40%;
+}
+.sizeLogo {
+  width: 48px;
+  height: 48px;
+}
+.html,
+.css,
+.javascript,
+.sass,
+.react,
+.nodejs,
+.photoshop,
+.figma,
+.github,
+.postman,
+.mongoDB,
+.insomnia {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  margin-top: 20px;
+}
+.littleMargin {
+  margin-left: 5px;
+  width: 80px;
+}
+.barre {
+  background-color: white;
+  width: 70%;
+  height: 25px;
+}

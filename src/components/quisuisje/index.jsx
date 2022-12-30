@@ -3,7 +3,7 @@ import '../../styles/quisuisje.css'
 function QuiSuisJe() {
   return (
     <section className="containerQuiSuisJe">
-      <h2 className="slide-in-right"> Qui suis-je ? </h2>
+      <h2 className="titleQuiSuisJe"> Qui suis-je ? </h2>
       <p>
         Je m'appelle Yanguël Cornillet, j'habite en Maine-et-loire (49). <br />À
         la suite d'une reconversion professionnelle réussie, j'ai pu devenir
@@ -13,6 +13,7 @@ function QuiSuisJe() {
         Dans la suite de ce portfolio vous allez découvrire mes réalisations
         ainsi que mes compétences dans le développement web.
       </p>
+      <p> télécharger mon CV </p>
     </section>
   )
 }

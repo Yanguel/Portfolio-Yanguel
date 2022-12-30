@@ -2,10 +2,13 @@
   padding: 30px 30px 30px 30px;
   background-color: black;
   color: white;
+  text-align: center;
 }
 
-h2 {
+.titleQuiSuisJe {
   margin: 0px;
+  font-size: 24px;
+  text-decoration: underline;
 }
 /* ------ Animation Qui suis je ----*/
 .slide-in-right {

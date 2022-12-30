@@ -9,6 +9,7 @@ function Header() {
       <div className="divProfil">
         <img src={Profil} alt="profil" className="profilHeader" />
       </div>
+
       <nav className="navHeader">
         {' '}
         <ul className="ulHeader">
@@ -42,10 +43,10 @@ function Header() {
             Je vous souhaite une bonne visite.
           </p>
         </div>
+      </div>
 
-        <div className="iconeFlecheHeader slide-bottom">
-          <i className="fa-solid fa-circle-arrow-down fa-xl arrow"></i>
-        </div>
+      <div className="iconeFlecheHeader slide-bottom">
+        <i className="fa-solid fa-circle-arrow-down fa-xl arrow"></i>
       </div>
     </header>
   )
