@@ -1,0 +1,50 @@
+#contact {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titleContact {
+  font-size: 24px;
+  color: white;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.textAndEmail {
+  text-align: center;
+}
+
+.pContact {
+  color: white;
+}
+.fa-envelope {
+  color: white;
+}
+
+.socialMedia {
+  width: 50%;
+  margin-bottom: 50px;
+}
+.logoLinkedin,
+.logoGithub {
+  padding: 15px;
+  width: 70px;
+  height: 70px;
+}
+.linkedin,
+.githubContact {
+  display: flex;
+  align-items: center;
+}
+.linkedin {
+  background-color: #0077b5;
+}
+.githubContact {
+  background-color: black;
+}
+.logoGithub {
+  border-radius: 15px;
+  width: 65px;
+}

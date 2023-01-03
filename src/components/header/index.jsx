@@ -13,10 +13,19 @@ function Header() {
       <nav className="navHeader">
         {' '}
         <ul className="ulHeader">
-          <li> Qui suis-je ? </li>
-          <li> Réalisations </li>
-          <li> Compétences </li>
-          <li> Contact </li>
+          <li>
+            <a href="#containerQuiSuisJe"> Qui suis-je ? </a>
+          </li>
+
+          <li>
+            <a href="#realisations-Title"> Réalisations </a>
+          </li>
+          <li>
+            <a href="#containerCompetences"> Compétences </a>
+          </li>
+          <li>
+            <a href="#contact">Contact </a>
+          </li>
         </ul>
       </nav>
       <div className="containerTextIcone">

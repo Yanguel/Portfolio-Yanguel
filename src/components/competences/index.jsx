@@ -13,7 +13,7 @@ import Photoshop from '../../assets/photoshop.png'
 import '../../styles/competences.css'
 function Competences() {
   return (
-    <section className="containerCompetences">
+    <section id="containerCompetences">
       <h3 className="titleCompetences"> Mes compétences </h3>
       <div className="competences">
         <div className="containerTechnologies">

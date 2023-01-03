@@ -1,5 +1,4 @@
-.containerCompetences {
-  background-color: black;
+#containerCompetences {
   color: white;
   padding: 30px;
 }
@@ -20,18 +19,18 @@
   text-align: center;
 }
 .containerTechnologies,
-.containerDesign,
 .containerAutres {
-  background: rgb(3, 169, 244);
-  background: linear-gradient(
-    45deg,
-    rgba(3, 169, 244, 0.5) 0%,
-    rgba(47, 47, 47, 0.5) 41%,
-    rgba(244, 65, 165, 0.5) 60%,
-    rgba(3, 169, 244, 0.5) 87%
-  );
-  border-radius: 20px;
   width: 40%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(21px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 24px;
+  padding: 10px;
 }
 .sizeLogo {
   width: 48px;

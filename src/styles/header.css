@@ -2,6 +2,7 @@
   font-family: 'AbrilFatFace';
   src: url(../styles/fonts/AbrilFatface-Regular.ttf);
 }
+
 header {
   background-image: url(../assets/pc-portable.jpg);
   object-fit: cover;
