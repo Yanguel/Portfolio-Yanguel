@@ -15,9 +15,9 @@ function Contact() {
           <i className="fa-regular fa-envelope fa-xl fa-beat"></i>
         </p>
         <a href="mailto:yanguelcornillet@yahoo.com">
-          <button>Yanguelcornillet@yahoo.com</button>
+          <button className="btnEmail">Yanguelcornillet@yahoo.com</button>
         </a>
-        <p>Trouvez moi sur :</p>
+        <p className="trouvezMoi">Trouvez moi sur :</p>
       </div>
       <div className="socialMedia">
         <a href="https://www.linkedin.com/in/yanguel-cornillet-8a55281b5/">

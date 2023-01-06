@@ -1,15 +1,24 @@
-#containerQuiSuisJe {
-  padding: 30px 30px 30px 30px;
+#quiSuisJe {
   color: white;
   text-align: center;
+  position: relative;
 }
-
+.wave2 {
+  top: 0;
+  width: 100%;
+  object-fit: cover;
+  left: 0;
+}
 .titleQuiSuisJe {
   margin: 0px;
   font-size: 24px;
   text-decoration: underline;
 }
-
+.pQuiSuisJe {
+  font-size: 20px;
+  position: relative;
+  z-index: 7;
+}
 .btnCV {
   background: rgb(3, 169, 244);
   background: linear-gradient(

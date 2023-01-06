@@ -47,8 +47,11 @@ function Header() {
           <p className="textHeader">
             {' '}
             Je suis développeur intégrateur web et je vais vous présenter dans
-            ce portfolio mes réalisations ainsi que mes compétences actuels dans
-            le développement web. <br />
+            ce portfolio : <br />
+            <ul className="presentation">
+              <li>• Mes réalisations jusqu'à présent. </li>
+              <li>• Mes compétences actuelles dans le développement web.</li>
+            </ul>
             Je vous souhaite une bonne visite.
           </p>
         </div>

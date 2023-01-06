@@ -1,6 +1,7 @@
 #containerCompetences {
   color: white;
-  padding: 30px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .competences {
   display: flex;
@@ -20,7 +21,7 @@
 }
 .containerTechnologies,
 .containerAutres {
-  width: 40%;
+  width: 45%;
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.1),
@@ -61,6 +62,7 @@
 .littleMargin {
   margin-left: 5px;
   width: 80px;
+  font-size: 20px;
 }
 .barre {
   background-color: white;
