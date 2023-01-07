@@ -1,9 +1,13 @@
 import '../../styles/realisations.css'
+import SlideOutIn from '../slideOutIn'
 
 function Realisations() {
   return (
     <section id="realisations-Title">
-      <h4 className="titleRealisations"> Mes réalisations</h4>
+      <SlideOutIn
+        content={<h4 className="titleRealisations"> Mes réalisations</h4>}
+      />
+
       <div className="containerRealisations">
         <div className="real1 size flip-vertical-fwd"></div>
         <div className="real2 size flip-vertical-fwd"></div>

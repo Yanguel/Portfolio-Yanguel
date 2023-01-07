@@ -44,7 +44,7 @@ function Header() {
               </div>
             </section>
           </div>
-          <p className="textHeader">
+          <div className="textHeader">
             {' '}
             Je suis développeur intégrateur web et je vais vous présenter dans
             ce portfolio : <br />
@@ -53,7 +53,7 @@ function Header() {
               <li>• Mes compétences actuelles dans le développement web.</li>
             </ul>
             Je vous souhaite une bonne visite.
-          </p>
+          </div>
         </div>
       </div>
 

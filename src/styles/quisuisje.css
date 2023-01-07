@@ -14,11 +14,13 @@
   font-size: 24px;
   text-decoration: underline;
 }
+
 .pQuiSuisJe {
   font-size: 20px;
   position: relative;
   z-index: 7;
 }
+
 .btnCV {
   background: rgb(3, 169, 244);
   background: linear-gradient(

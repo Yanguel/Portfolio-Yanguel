@@ -11,10 +11,13 @@ import React from '../../assets/react.png'
 import Sass from '../../assets/sass.png'
 import Photoshop from '../../assets/photoshop.png'
 import '../../styles/competences.css'
+import SlideOutIn from '../slideOutIn'
 function Competences() {
   return (
     <section id="containerCompetences">
-      <h3 className="titleCompetences"> Mes compétences </h3>
+      <SlideOutIn
+        content={<h3 className="titleCompetences"> Mes compétences </h3>}
+      />
       <div className="competences">
         <div className="containerTechnologies">
           <h4 className="titleTechnologies">Technologies</h4>
