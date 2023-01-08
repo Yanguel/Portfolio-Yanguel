@@ -1,13 +1,14 @@
-import React, { useEffect } from 'react'
 import '../../styles/slideOutIn.css'
-function SlideOutIn(props) {
-  const { content } = props
+
+import { useEffect } from 'react'
+
+function useSlideInOut(ref) {
   useEffect(() => {
     function handleScroll() {
-      const element = document.querySelector('.slide-in-out')
+      const element = ref.current
       const elementRect = element.getBoundingClientRect()
       const elementInView =
-        elementRect.top >= 150 && elementRect.bottom <= window.innerHeight
+        elementRect.top >= 0 && elementRect.bottom <= window.innerHeight
 
       if (elementInView) {
         element.classList.add('in-view')
@@ -21,15 +22,7 @@ function SlideOutIn(props) {
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [])
-
-  return (
-    <div>
-      <div className="slide-in-out"> {content} </div>
-    </div>
-  )
+  }, [ref])
 }
 
-export default SlideOutIn
-
-//slide-in-out
+export default useSlideInOut

@@ -1,13 +1,16 @@
 #containerCompetences {
   color: white;
-  margin-top: 100px;
-  margin-bottom: 100px;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .competences {
   display: flex;
   justify-content: space-around;
 }
-
+h2 {
+  font-size: 30px;
+}
 .titleCompetences {
   margin-top: 0;
   margin-bottom: 45px;
@@ -23,11 +26,12 @@
 .containerAutres {
   width: 45%;
   background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.1)
+    45deg,
+    rgba(3, 169, 244, 0.5) 0%,
+    rgba(47, 47, 47, 0.5) 41%,
+    rgba(244, 65, 165, 0.5) 60%,
+    rgba(3, 169, 244, 0.5) 87%
   );
-  backdrop-filter: blur(21px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 24px;
@@ -39,8 +43,8 @@
 }
 .githubLogo,
 .mongodb {
-  height: 38px;
-  width: 50px;
+  height: 40px;
+  width: 65px;
 }
 .html,
 .css,
@@ -55,9 +59,10 @@
 .mongoDB,
 .insomnia {
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin-left: 5px;
-  margin-top: 20px;
+  text-align: center;
 }
 .littleMargin {
   margin-left: 5px;
@@ -66,7 +71,13 @@
 }
 .barre {
   background-color: white;
-  width: 70%;
+  width: 90%;
   height: 25px;
   margin-right: 10px;
+}
+.containerBarre {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

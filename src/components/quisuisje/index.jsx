@@ -1,32 +1,23 @@
 import '../../styles/quisuisje.css'
 import Wave2 from '../../assets/wavegrey5.svg'
 import CV from '../../assets/CVYanguelCornillet.pdf'
-import SlideOutIn from '../slideOutIn'
+import PhotoCv from '../../assets/CVYanguelCornillet.png'
 // import Slider from '../scroll'
+import { useRef } from 'react'
+import useSlideInOut from '../slideRightIn'
 
 function QuiSuisJe() {
-  /* const slideElements = document.querySelectorAll('.slide-element')
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.intersectionRatio > 0) {
-        entry.target.classList.add('slide-element')
-      }
-    })
-  })
-
-  slideElements.forEach((slideElement) => {
-    observer.observe(slideElement)
-  }) */
-
+  const elementRef = useRef(null)
+  useSlideInOut(elementRef)
   return (
     <section id="quiSuisJe">
-      <img src={Wave2} alt="" className="wave2" />
+      {/*<img src={Wave2} alt="" className="wave2" />*/}
       <div className="containerQuiSuisJe">
-        <SlideOutIn
-          content={<h2 className="titleQuiSuisJe"> Qui suis-je ? </h2>}
-        />
-
+        {/* Lié à l'animation slide */}
+        <div ref={elementRef} className="slide-in-out titleQuiSuisJe">
+          <h1> Qui suis-je ?</h1>
+        </div>
+        {/* --------------------*/}
         <p className="pQuiSuisJe">
           Je m'appelle Yanguël Cornillet, j'habite en Maine-et-loire (49).{' '}
           <br />À la suite d'une reconversion professionnelle réussie, j'ai pu
@@ -35,6 +26,9 @@ function QuiSuisJe() {
         <a href={CV} download>
           <button className="btnCV"> télécharger mon CV </button>
         </a>
+      </div>
+      <div className="CV">
+        <img src={PhotoCv} alt=" Visuel du CV " className="photoCv"></img>
       </div>
     </section>
   )

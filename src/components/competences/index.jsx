@@ -11,27 +11,42 @@ import React from '../../assets/react.png'
 import Sass from '../../assets/sass.png'
 import Photoshop from '../../assets/photoshop.png'
 import '../../styles/competences.css'
-import SlideOutIn from '../slideOutIn'
+import Wave2 from '../../assets/wavegrey5.svg'
+// import SlideOutIn from '../slideOutIn'
+
+import { useRef } from 'react'
+import useSlideInOut from '../slideRightIn'
+
 function Competences() {
+  const elementRef = useRef(null)
+  useSlideInOut(elementRef)
+
   return (
     <section id="containerCompetences">
-      <SlideOutIn
-        content={<h3 className="titleCompetences"> Mes compétences </h3>}
-      />
+      {/*<img src={Wave2} alt="" className="wave2" />}
+      {/* Lié à l'animation slide */}
+      <div ref={elementRef} className="slide-in-out titleCompetences">
+        <h2> Mes Compétences </h2>
+      </div>
+      {/* ---------------------*/}
       <div className="competences">
         <div className="containerTechnologies">
-          <h4 className="titleTechnologies">Technologies</h4>
+          <p className="titleTechnologies">Technologies</p>
           <div className="html">
             <img src={Html} alt="logo Html" className="sizeLogo"></img>
             <span className="littleMargin">Html </span>
-            <div className="barre"></div>
-            80%
+            <div className="containerBarre">
+              <div className="barre"></div>
+              <p>80 %</p>
+            </div>
           </div>
           <div className="css">
             <img src={Css} alt="logo Css" className="sizeLogo"></img>
             <span className="littleMargin">Css </span>
-            <div className="barre"></div>
-            65%
+            <div className="containerBarre">
+              <div className="barre"></div>
+              <p>65%</p>
+            </div>
           </div>
           <div className="javascript">
             <img
@@ -40,31 +55,38 @@ function Competences() {
               className="sizeLogo"
             ></img>
             <span className="littleMargin">Javascript </span>
-            <div className="barre"></div>
-            60%
+            <div className="containerBarre">
+              <div className="barre"></div>
+              <p>60%</p>
+            </div>
           </div>
           <div className="sass">
             <img src={Sass} alt="logo Sass" className="sizeLogo"></img>
             <span className="littleMargin">Sass</span>
-            <div className="barre"></div>
-            90%
+            <div className="containerBarre">
+              <div className="barre"></div>
+              <p>90%</p>
+            </div>
           </div>
           <div className="react">
             <img src={React} alt="logo React" className="sizeLogo"></img>
             <span className="littleMargin"> React </span>
-            <div className="barre"></div>
-            90%
+            <div className="containerBarre">
+              <div className="barre"></div>
+              <p>90%</p>
+            </div>
           </div>
           <div className="nodejs">
             <img src={NodeJs} alt="logo NodeJs" className="sizeLogo node"></img>
             <span className="littleMargin">Node.js </span>
-            <div className="barre"></div>
-            60%
+            <div className="containerBarre">
+              <div className="barre"></div>
+              <p>60%</p>
+            </div>
           </div>
         </div>
-
         <div className="containerAutres">
-          <h4 className="titleAutres">Logiciel autres</h4>
+          <p className="titleAutres">Logiciel autres</p>
           <div className="photoshop">
             <img
               src={Photoshop}
@@ -72,8 +94,10 @@ function Competences() {
               className="sizeLogo"
             ></img>
             <span className="littleMargin">Photoshop</span>
-            <div className="barre"></div>
-            60%
+            <div className="containerBarre">
+              <div className="barre"></div>
+              <p>60%</p>
+            </div>
           </div>
           <div className="postman">
             <img
@@ -82,20 +106,26 @@ function Competences() {
               className="sizeLogo postmanLogo"
             ></img>
             <span className="littleMargin">Postman </span>
-            <div className="barre"></div>
-            80%
+            <div className="containerBarre">
+              <div className="barre"></div>
+              <p>80%</p>
+            </div>
           </div>
           <div className="figma">
             <img src={Figma} alt="logo Figma" className="sizeLogo"></img>
             <span className="littleMargin"> Figma </span>
-            <div className="barre"></div>
-            90%
+            <div className="containerBarre">
+              <div className="barre"></div>
+              <p>90%</p>
+            </div>
           </div>
           <div className="insomnia">
             <img src={Insomnia} alt="logo Insomnia" className="sizeLogo"></img>
             <span className="littleMargin">Insomnia </span>
-            <div className="barre"></div>
-            80%
+            <div className="containerBarre">
+              <div className="barre"></div>
+              <p>80%</p>
+            </div>
           </div>
           <div className="mongoDB">
             <img
@@ -104,8 +134,10 @@ function Competences() {
               className="sizeLogo mongodb"
             ></img>
             <span className="littleMargin">MongoDB</span>
-            <div className="barre"></div>
-            80%
+            <div className="containerBarre">
+              <div className="barre"></div>
+              <p>80%</p>
+            </div>
           </div>
           <div className="github">
             <img
@@ -114,8 +146,10 @@ function Competences() {
               className="sizeLogo githubLogo"
             ></img>
             <span className="littleMargin">Github </span>
-            <div className="barre"></div>
-            90%
+            <div className="containerBarre">
+              <div className="barre"></div>
+              <p>90%</p>
+            </div>
           </div>
         </div>
       </div>

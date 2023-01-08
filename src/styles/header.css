@@ -18,6 +18,7 @@ header {
   position: relative;
   padding: 0px 15px 0px 15px;
 }
+
 .divProfil {
   position: absolute;
   left: 5%;
@@ -31,7 +32,6 @@ header {
   --c: #03a9f4;
 
   width: var(--s);
-  outline: calc(var(--s) / 2) solid rgba(0, 0, 0, 0.308);
   outline-offset: calc(var(--s) / -2);
   cursor: pointer;
   transition: 0.3s;
@@ -48,7 +48,6 @@ header {
 .ulHeader > li:hover {
   background: linear-gradient(90deg, #03a9f4, #f441a5, #03a9f4);
   border-radius: 30px;
-  text-transform: uppercase;
   text-align: center;
   cursor: pointer;
 }
@@ -56,6 +55,10 @@ header {
   width: 50%;
   margin-top: 50px;
 }
+/*-------Btn Night mode and day mode ---*/
+
+/* ---------------------------*/
+
 .ulHeader {
   display: flex;
   flex-direction: row;

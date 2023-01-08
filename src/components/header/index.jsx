@@ -1,8 +1,8 @@
 import React from 'react'
 import Profil from '../../assets/profil.jpeg'
 import '../../styles/header.css'
-import '../textScramble/'
-
+import App from '../btnLight'
+import '../../styles/btnLight.css'
 function Header() {
   return (
     <header>
@@ -28,8 +28,9 @@ function Header() {
           </li>
         </ul>
       </nav>
+      <App />
       <div className="containerTextIcone">
-        <div className="containerTextHeader slit-in-horizontal">
+        <div className="containerTextHeader">
           <div className="containerTitleHeader">
             <p className="bonjour">Bonjour,</p>
             <section className="animation">
