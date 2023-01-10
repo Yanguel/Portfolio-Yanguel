@@ -9,14 +9,14 @@
   flex-direction: row;
 }
 .containerQuiSuisJe {
-  width: 80%;
+  width: 50%;
   margin-left: 100px;
 }
 .CV {
-  width: 100%;
+  width: 50%;
 }
 .photoCv {
-  width: 60%;
+  width: 50%;
 }
 .header,
 .finisher-header {

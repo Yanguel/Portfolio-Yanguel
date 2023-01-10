@@ -3,7 +3,6 @@ import Linkedin from '../../assets/linkedinLogo.png'
 import Github from '../../assets/github1.png'
 import { useRef } from 'react'
 import useSlideInOut from '../slideRightIn'
-import Wave2 from '../../assets/wavegrey5.svg'
 function Contact() {
   const elementRef = useRef(null)
   useSlideInOut(elementRef)

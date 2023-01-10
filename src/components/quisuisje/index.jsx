@@ -1,5 +1,4 @@
 import '../../styles/quisuisje.css'
-import Wave2 from '../../assets/wavegrey5.svg'
 import CV from '../../assets/CVYanguelCornillet.pdf'
 import PhotoCv from '../../assets/CVYanguelCornillet.png'
 // import Slider from '../scroll'

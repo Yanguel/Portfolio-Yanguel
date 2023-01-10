@@ -11,7 +11,6 @@ import React from '../../assets/react.png'
 import Sass from '../../assets/sass.png'
 import Photoshop from '../../assets/photoshop.png'
 import '../../styles/competences.css'
-import Wave2 from '../../assets/wavegrey5.svg'
 // import SlideOutIn from '../slideOutIn'
 
 import { useRef } from 'react'
