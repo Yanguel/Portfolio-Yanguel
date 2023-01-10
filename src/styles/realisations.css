@@ -16,7 +16,7 @@ h3 {
 .containerRealisations {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   width: 70%;
   background: rgb(3, 169, 244);
   background: linear-gradient(

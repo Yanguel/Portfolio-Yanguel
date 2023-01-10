@@ -1,7 +1,8 @@
 import '../../styles/realisations.css'
 import { useRef } from 'react'
 import useSlideInOut from '../slideRightIn'
-
+import '../../styles/rotateCard.css'
+import GitHub from '../../assets/github.png'
 function Realisations() {
   const elementRef = useRef(null)
   useSlideInOut(elementRef)
@@ -14,29 +15,186 @@ function Realisations() {
       </div>
       {/*--------------------*/}
       <div className="containerRealisations">
-        <div className="real1 size flip-vertical-fwd">
-          <div className="card-front">{this.props.front}</div>
-          <div className="card-back">{this.props.back}</div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="card-content">
+                <h2>Oty's Barber</h2>
+                <p>Site vitrine</p>
+                <p>REACT, HTML, CSS, JS </p>
+              </div>
+            </div>
+            <div class="card-back">
+              <div class="card-top">
+                <div class="card-image"></div>
+              </div>
+              <div class="card-content-back">
+                <p>
+                  - Création du design. <br />
+                  - Mise en place du pattern de couleur. <br />- Récupération
+                  local de photo.
+                </p>
+                <a
+                  href="https://github.com/Yanguel/Otys-Barber"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={GitHub} alt="Github" className="githubLogo"></img>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="real2 size flip-vertical-fwd">
-          <div className="card-front">{this.props.front}</div>
-          <div className="card-back">{this.props.back}</div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="card-content">
+                <h2>Kasa</h2>
+                <p>Application web de location immobilière</p>
+                <p>React, API, HTML, CSS, JS</p>
+              </div>
+            </div>
+            <div class="card-back">
+              <div class="card-top">
+                <div class="card-image"></div>
+              </div>
+              <div class="card-content-back">
+                <p>
+                  - Intégration d'une maquette Figma <br />
+                  - Utilisation d'un format JSON comme base de donnée <br />-
+                  Création d'animation (Carousel / Accordion ...)
+                </p>
+                <a
+                  href="https://github.com/Yanguel/Projet_7_Kasa_Location"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={GitHub} alt="Github" className="githubLogo"></img>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="real3 size flip-vertical-fwd">
-          <div className="card-front">{this.props.front}</div>
-          <div className="card-back">{this.props.back}</div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="card-content">
+                <h2>Piiquante</h2>
+                <p>Application d'avis gastronomiques</p>
+                <p>MongoDB, NodeJS, HTML, CSS, JS</p>
+              </div>
+            </div>
+            <div class="card-back">
+              <div class="card-top">
+                <div class="card-image"></div>
+              </div>
+              <div class="card-content-back">
+                <p>
+                  - Création d'une Api <br />
+                  - Création d'un Front-end <br />
+                  - Création de compte et suppression <br />- Mise en place de
+                  sécurité de connection.
+                </p>
+                <a
+                  href="https://github.com/Yanguel/Projet_6_Cornillet_Yanguel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={GitHub} alt="Github" className="githubLogo"></img>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="real4 size flip-vertical-fwd">
-          <div className="card-front">{this.props.front}</div>
-          <div className="card-back">{this.props.back}</div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front ">
+              <div class="card-content">
+                <h2>Kanap</h2>
+                <p>Site E-Commerce</p>
+                <p>NodeJS, HTML, CSS, JS</p>
+              </div>
+            </div>
+            <div class="card-back">
+              <div class="card-top">
+                <div class="card-image"></div>
+              </div>
+              <div class="card-content-back">
+                <p>
+                  - Intégration d'une page E-commerce. <br />
+                  - Récupération d'éléments venant d'une API <br />- Création
+                  d'un panier avec calcul total et suppression. <br />-
+                  Utilisation du localStorage
+                </p>
+                <a
+                  href="https://github.com/Yanguel/Kanap-livrable5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={GitHub} alt="Github" className="githubLogo"></img>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="real5 size flip-vertical-fwd">
-          <div className="card-front">{this.props.front}</div>
-          <div className="card-back">{this.props.back}</div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="card-content">
+                <h2>Ohmyfood</h2>
+                <p>Site de commande de menu au restaurant.</p>
+                <p>HTML, CSS, SASS</p>
+              </div>
+            </div>
+            <div class="card-back">
+              <div class="card-top">
+                <div class="card-image"></div>
+              </div>
+              <div class="card-content-back">
+                <p>
+                  - Intégration d'une page web <br />
+                  - Création de plusieurs animation <br />- Utilisation de Sass{' '}
+                </p>
+                <a
+                  href="https://github.com/Yanguel/Ohmyfood-Projet-3GitHub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={GitHub} alt="Github" className="githubLogo"></img>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="real6 size flip-vertical-fwd">
-          <div className="card-front">{this.props.front}</div>
-          <div className="card-back">{this.props.back}</div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="card-content">
+                <h2>Panthère</h2>
+                <p>Agence de web design</p>
+                <p>HTML, CSS, JS</p>
+              </div>
+            </div>
+            <div class="card-back">
+              <div class="card-top">
+                <div class="card-image"></div>
+              </div>
+              <div class="card-content-back">
+                <p>
+                  - Optimisation d'un site web existant <br />
+                  - Amélioration de l'accessibilité (Couleurs/ Déplacement
+                  clavier) <br />- Amélioration du SEO
+                </p>
+                <a
+                  href="https://github.com/Yanguel/Projet-4-Site-La-Panthere-modifier"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={GitHub} alt="Github" className="githubLogo"></img>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
