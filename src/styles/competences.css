@@ -1,12 +1,13 @@
 #containerCompetences {
   color: white;
-
+  margin: 40px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 .competences {
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
 }
 h2 {
   font-size: 30px;
@@ -18,13 +19,13 @@ h2 {
   font-size: 24px;
   text-align: center;
 }
-.titleTechnologies,
+.titleLangage,
 .titleAutres {
   text-align: center;
 }
-.containerTechnologies,
-.containerAutres {
-  width: 45%;
+.containerLangage,
+.containerAutres,
+.framework {
   background: linear-gradient(
     45deg,
     rgba(3, 169, 244, 0.5) 0%,
@@ -37,27 +38,25 @@ h2 {
   border-radius: 24px;
   padding: 10px;
 }
+.containerLangage {
+  width: 50%;
+}
+.framework {
+  width: 50%;
+}
+.langageAndFrameworks {
+  display: flex;
+}
 .sizeLogo {
   width: 48px;
   height: 48px;
 }
 .githubLogo,
-.mongodb {
+.wordPressLogo .mongodb {
   height: 40px;
   width: 65px;
 }
-.html,
-.css,
-.javascript,
-.sass,
-.react,
-.nodejs,
-.photoshop,
-.figma,
-.github,
-.postman,
-.mongoDB,
-.insomnia {
+.centerTotal {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,18 +65,15 @@ h2 {
 }
 .littleMargin {
   margin-left: 5px;
-  width: 80px;
   font-size: 20px;
 }
-.barre {
-  background-color: white;
-  width: 90%;
-  height: 25px;
-  margin-right: 10px;
+.titleFramework {
+  text-align: center;
 }
-.containerBarre {
-  width: 100%;
+.totalFrameworks,
+.totalLangage,
+.totalAutre {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }

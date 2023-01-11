@@ -30,13 +30,10 @@ body {
   transition: transform 0.6s;
   transform-style: preserve-3d;
 }
-
 .card:hover .card-inner {
   transform: rotateY(180deg);
 }
-
-.card-front,
-.card-back {
+.sizeDiv {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -46,8 +43,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.card-front {
-  background-image: url('../assets/otysbarber1.PNG');
+.centerImg {
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -56,25 +52,71 @@ body {
   justify-content: flex-end;
   overflow: hidden;
 }
-.card-front:before {
+.card-front {
+  background-image: url('../assets/otysbarber1.PNG');
+}
+.card-front2 {
+  background-image: url('../assets/kasa3.PNG');
+}
+.card-front3 {
+  background-image: url('../assets/hot3.png');
+}
+.card-front4 {
+  background-image: url('../assets/kanap2.PNG');
+}
+.card-front5 {
+  background-image: url('../assets/ohmyfood2.PNG');
+}
+.card-front6 {
+  background-image: url('../assets/panthere1.png');
+}
+.before:before {
   content: '';
   position: absolute;
   width: 100%;
-  height: 100%;
-  top: 0px;
+  height: 60%;
+  bottom: 0px;
   background: linear-gradient(0deg, black, transparent);
 }
-
-.card-front .card-content {
+.card-front,
+.card-front2,
+.card-front3,
+.card-front4,
+.card-front5,
+.card-front6,
+.card-content6,
+.card-content,
+.card-content2,
+.card-content3,
+.card-content4,
+.card-content5 {
   z-index: 1;
   color: white;
 }
-
 .card-front .card-content p {
   color: #ececec;
 }
-
-.card-back {
+.card-front2 .card-content2 p {
+  color: #ececec;
+}
+.card-front3 .card-content3 p {
+  color: #ececec;
+}
+.card-front4 .card-content4 p {
+  color: #ececec;
+}
+.card-front5 .card-content5 p {
+  color: #ececec;
+}
+.card-front6 .card-content6 p {
+  color: #ececec;
+}
+.card-back,
+.card-back2,
+.card-back3,
+.card-back4,
+.card-back5,
+.card-back6 {
   transform: rotateY(180deg);
   background: white;
   display: flex;
@@ -82,28 +124,69 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .card-back .card-image {
   width: 237px;
+  height: 172px;
+  margin: 0 auto;
+  border: solid 1px #cecece;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center center;
+  background-image: url('../assets/otysbarber2.PNG');
+}
+.card-back2 .card-image2 {
+  width: 240px;
+  height: 137px;
+  margin: 0 auto;
+  border: solid 1px #cecece;
+  border-radius: 8px;
+  background-image: url('../assets/kasa1.PNG');
+  background-size: cover;
+  background-position: center center;
+}
+.card-back3 .card-image3 {
+  width: 240px;
+  height: 156px;
+  margin: 0 auto;
+  border: solid 1px #cecece;
+  border-radius: 8px;
+  background-image: url('../assets/hot2.PNG');
+  background-size: cover;
+  background-position: center center;
+}
+.card-back4 .card-image4 {
+  width: 240px;
   height: 140px;
   margin: 0 auto;
   border: solid 1px #cecece;
   border-radius: 8px;
-  background-image: url('../assets/otysbarber2.PNG');
+  background-image: url('../assets/kanap3.PNG');
   background-size: cover;
   background-position: center center;
 }
-
-.card-back p {
+.card-back5 .card-image5 {
+  width: 240px;
+  height: 192px;
+  margin: 0 auto;
+  border: solid 1px #cecece;
+  border-radius: 8px;
+  background-image: url('../assets/ohmyfood3.PNG');
+  background-size: cover;
+  background-position: center center;
+}
+.card-back6 .card-image6 {
+  width: 240px;
+  height: 154px;
+  margin: 0 auto;
+  border: solid 1px #cecece;
+  border-radius: 8px;
+  background-image: url('../assets/panthere2.PNG');
+  background-size: cover;
+  background-position: center center;
+}
+.margin p {
   margin-top: 12px;
 }
-
-.card-back .card-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .card-back .card-icons a {
   font-size: 18px;
   color: white;
@@ -118,16 +201,21 @@ body {
   text-decoration: none;
   transition: opacity 0.2s;
 }
-
-.card-back .card-icons a:hover {
+.card-back6 a:hover {
   cursor: pointer;
   opacity: 0.7;
 }
-
-.card-front {
+.card-front,
+.card-front2,
+.card-front3,
+.card-front4,
+.card-front5,
+.card-front6 {
   transition: opacity 0.6s;
 }
-
 .card:hover .card-front {
+  opacity: 0;
+}
+.card6:hover .card-front6 {
   opacity: 0;
 }
