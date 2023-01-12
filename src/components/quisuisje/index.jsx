@@ -18,9 +18,24 @@ function QuiSuisJe() {
         </div>
         {/* --------------------*/}
         <p className="pQuiSuisJe">
-          Je m'appelle Yanguël Cornillet, j'habite en Maine-et-loire (49).{' '}
-          <br />À la suite d'une reconversion professionnelle réussie, j'ai pu
-          devenir Développeur web junior avec un diplome RNCP niveau 5.
+          Je m’appelle <strong>Yanguël Cornillet</strong>, je suis{' '}
+          <strong>développeur Web junior </strong> et j'habite dans le
+          Maine-et-Loire (49). <br />
+          J'ai effectué une reconversion professionnelle dans le{' '}
+          <strong>Développement Web</strong> chez OpenClassrooms pour consolider
+          mes connaissances et devenir un développeur web fullstack, domaine qui
+          m’intéresse depuis de nombreuses années. <br />
+          Mes années d'expériences dans le commerce m'ont permis d’acquérir des
+          compétences importantes telles que l’<strong>organisation</strong>, la
+          <strong> ponctualité</strong> ainsi que des qualités relationnelles
+          utile lors d'un projet en groupe comme l'
+          <strong>écoute</strong> ou bien la <strong>remise en question</strong>
+          . <br />
+          Je suis <strong>motivé et enthousiaste</strong> à l'idée de mettre mes
+          compétences et mon savoir-faire au service de projets passionnants.{' '}
+          <br />
+          Je vous invite à découvrir mes projets, qui vous donneront un aperçu
+          de mon parcours et de mes compétences.
         </p>
         <a href={CV} download>
           <button className="btnCV"> télécharger mon CV </button>

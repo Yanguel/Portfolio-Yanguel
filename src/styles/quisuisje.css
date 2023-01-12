@@ -4,6 +4,7 @@
   position: relative;
   padding-top: 100px;
   padding-bottom: 100px;
+  height: 100vh !important;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -46,10 +47,12 @@ h1 {
 
 .pQuiSuisJe {
   font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   position: relative;
   z-index: 7;
+  line-height: 35px;
 }
-
 .btnCV {
   background: rgb(3, 169, 244);
   background: linear-gradient(

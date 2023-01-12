@@ -112,7 +112,7 @@ function Realisations() {
               <div class="card-content4">
                 <h2>Kanap</h2>
                 <p>Site E-Commerce</p>
-                <p>NodeJS, HTML, CSS, JS</p>
+                <p>JSON, LocalStorage, HTML, CSS, JS</p>
               </div>
             </div>
             <div class="card-back4 sizeDiv margin">

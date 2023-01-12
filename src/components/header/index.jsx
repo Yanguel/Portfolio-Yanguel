@@ -1,7 +1,6 @@
 import React from 'react'
 import Profil from '../../assets/profil.jpeg'
 import '../../styles/header.css'
-import App from '../btnLight'
 import '../../styles/btnLight.css'
 function Header() {
   return (
@@ -39,7 +38,6 @@ function Header() {
           </li>
         </ul>
       </nav>
-      <App />
       <div className="containerTextIcone">
         <div className="containerTextHeader">
           <div className="containerTitleHeader">
@@ -58,13 +56,16 @@ function Header() {
           </div>
           <div className="textHeader">
             {' '}
-            Je suis développeur intégrateur web et je vais vous présenter dans
-            ce portfolio : <br />
-            <ul className="presentation">
+            <strong className="titleHeaderDev">
+              {' '}
+              Développeur intégrateur web.
+            </strong>{' '}
+            <ol className="presentation">
+              <span className="titleUl">Voici dans ce portfolio :</span>
               <li>• Mes réalisations jusqu'à présent. </li>
               <li>• Mes compétences actuelles dans le développement web.</li>
-            </ul>
-            Je vous souhaite une bonne visite.
+            </ol>
+            En vous souhaitant une bonne visite.
           </div>
         </div>
       </div>

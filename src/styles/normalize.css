@@ -96,6 +96,16 @@ abbr[title] {
 b,
 strong {
   font-weight: bolder;
+  background: linear-gradient(
+    45deg,
+    rgba(3, 169, 244, 0.5) 0%,
+    rgba(47, 47, 47, 0.5) 41%,
+    rgba(244, 65, 165, 0.5) 60%,
+    rgba(3, 169, 244, 0.5) 87%
+  );
+  box-shadow: 0 8px 32px 0 rgb(0 0 0 / 36%);
+  border-radius: 15px;
+  padding: 5px;
 }
 
 /**

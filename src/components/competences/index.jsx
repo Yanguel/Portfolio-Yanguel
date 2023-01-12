@@ -117,7 +117,7 @@ function Competences() {
                 height="10px"
                 fontColor="#53C2E1"
                 trackWidth="10"
-                percentage="85"
+                percentage="90"
                 trackPathColor="grey"
                 trackBorderColor="black"
                 hollowBackgroundColor="black"
@@ -181,32 +181,6 @@ function Competences() {
         <div className="back-end overFlash">
           <p className="titleBack-end">Logiciel Back-end</p>
           <div className="totalBack-end">
-            <div className="nodejs centerTotal">
-              <img
-                src={NodeJs}
-                alt="logo NodeJs"
-                className="sizeLogo node"
-              ></img>
-              <span className="littleMargin">Node.js </span>
-              <ProgressBar
-                width="300px"
-                height="10px"
-                fontColor="#8AC800"
-                trackWidth="10"
-                percentage="60"
-                trackPathColor="grey"
-                trackBorderColor="black"
-                hollowBackgroundColor="black"
-                defColor={{
-                  fair: 'orangered',
-                  good: 'yellow',
-                  excellent: 'green',
-                  poor: 'red',
-                }}
-                scrollArea={myRef}
-              />
-            </div>
-
             <div className="postman centerTotal">
               <img
                 src={Postman}
@@ -258,6 +232,31 @@ function Competences() {
                 scrollArea={myRef}
               />
             </div>
+            <div className="nodejs centerTotal">
+              <img
+                src={NodeJs}
+                alt="logo NodeJs"
+                className="sizeLogo node"
+              ></img>
+              <span className="littleMargin">Node.js </span>
+              <ProgressBar
+                width="300px"
+                height="10px"
+                fontColor="#8AC800"
+                trackWidth="10"
+                percentage="70"
+                trackPathColor="grey"
+                trackBorderColor="black"
+                hollowBackgroundColor="black"
+                defColor={{
+                  fair: 'orangered',
+                  good: 'yellow',
+                  excellent: 'green',
+                  poor: 'red',
+                }}
+                scrollArea={myRef}
+              />
+            </div>
             <div className="mongoDB centerTotal">
               <img src={Mongodb} alt="logo MongoDb" className=" mongodb"></img>
               <span className="littleMargin">MongoDB</span>
@@ -284,6 +283,73 @@ function Competences() {
         <div className="containerAutres overFlash">
           <p className="titleAutres">Logiciel autres</p>
           <div className="totalAutre">
+            <div className="figma centerTotal">
+              <img src={Figma} alt="logo Figma" className="sizeLogo"></img>
+              <span className="littleMargin"> Figma </span>
+              <ProgressBar
+                width="300px"
+                height="10px"
+                fontColor="white"
+                trackWidth="10"
+                percentage="100"
+                trackPathColor="grey"
+                trackBorderColor="black"
+                hollowBackgroundColor="black"
+                defColor={{
+                  fair: 'orangered',
+                  good: 'yellow',
+                  excellent: 'green',
+                  poor: 'red',
+                }}
+                scrollArea={myRef}
+              />
+            </div>
+            <div className="github centerTotal">
+              <img
+                src={Github}
+                alt="logo Github"
+                className="sizeLogo githubLogo"
+              ></img>
+              <span className="littleMargin">Github </span>
+              <ProgressBar
+                width="300px"
+                height="10px"
+                fontColor="black"
+                trackWidth="10"
+                percentage="90"
+                trackPathColor="grey"
+                trackBorderColor="black"
+                hollowBackgroundColor="white"
+                defColor={{
+                  fair: 'orangered',
+                  good: 'yellow',
+                  excellent: 'green',
+                  poor: 'red',
+                }}
+                scrollArea={myRef}
+              />
+            </div>
+            <div className="seo centerTotal">
+              <img src={SeoLogo} alt="logo seo" className="sizeLogo"></img>
+              <span className="littleMargin">Marketing Seo</span>
+              <ProgressBar
+                width="300px"
+                height="10px"
+                fontColor="#9F2525"
+                trackWidth="10"
+                percentage="80"
+                trackPathColor="grey"
+                trackBorderColor="black"
+                hollowBackgroundColor="black"
+                defColor={{
+                  fair: 'orangered',
+                  good: 'yellow',
+                  excellent: 'green',
+                  poor: 'red',
+                }}
+                scrollArea={myRef}
+              />
+            </div>
             <div className="photoshop centerTotal">
               <img
                 src={Photoshop}
@@ -310,74 +376,6 @@ function Competences() {
               />
             </div>
 
-            <div className="figma centerTotal">
-              <img src={Figma} alt="logo Figma" className="sizeLogo"></img>
-              <span className="littleMargin"> Figma </span>
-              <ProgressBar
-                width="300px"
-                height="10px"
-                fontColor="white"
-                trackWidth="10"
-                percentage="100"
-                trackPathColor="grey"
-                trackBorderColor="black"
-                hollowBackgroundColor="black"
-                defColor={{
-                  fair: 'orangered',
-                  good: 'yellow',
-                  excellent: 'green',
-                  poor: 'red',
-                }}
-                scrollArea={myRef}
-              />
-            </div>
-
-            <div className="github centerTotal">
-              <img
-                src={Github}
-                alt="logo Github"
-                className="sizeLogo githubLogo"
-              ></img>
-              <span className="littleMargin">Github </span>
-              <ProgressBar
-                width="300px"
-                height="10px"
-                fontColor="black"
-                trackWidth="10"
-                percentage="85"
-                trackPathColor="grey"
-                trackBorderColor="black"
-                hollowBackgroundColor="white"
-                defColor={{
-                  fair: 'orangered',
-                  good: 'yellow',
-                  excellent: 'green',
-                  poor: 'red',
-                }}
-                scrollArea={myRef}
-              />
-            </div>
-            <div className="seo centerTotal">
-              <img src={SeoLogo} alt="logo seo" className="sizeLogo"></img>
-              <span className="littleMargin">Marketing Seo</span>
-              <ProgressBar
-                width="300px"
-                height="10px"
-                fontColor="#9F2525"
-                trackWidth="10"
-                percentage="90"
-                trackPathColor="grey"
-                trackBorderColor="black"
-                hollowBackgroundColor="black"
-                defColor={{
-                  fair: 'orangered',
-                  good: 'yellow',
-                  excellent: 'green',
-                  poor: 'red',
-                }}
-                scrollArea={myRef}
-              />
-            </div>
             <div className="wordpress centerTotal">
               <img
                 src={WordPress}

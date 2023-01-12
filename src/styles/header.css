@@ -2,6 +2,7 @@
   font-family: 'AbrilFatFace';
   src: url(../styles/fonts/AbrilFatface-Regular.ttf);
 }
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Source+Sans+Pro');
 
 header {
   background-image: url(../assets/pc-portable.jpg);
@@ -18,13 +19,19 @@ header {
   position: relative;
   padding: 0px 15px 0px 15px;
 }
+.titleHeaderDev {
+  font-size: 24px;
 
+  margin-bottom: 10px;
+}
 .divProfil {
   position: absolute;
   left: 5%;
   top: 5%;
 }
-
+.titleUl {
+  text-decoration: underline;
+}
 .profilHeader {
   --s: 150px;
   --b: 8px;
@@ -76,7 +83,7 @@ header {
   width: 50%;
   text-align: center;
   position: absolute;
-  top: 40%;
+  top: 35%;
 }
 .arrow {
   font-size: 50px;
@@ -92,14 +99,18 @@ header {
   margin-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
+  line-height: normal;
 }
 .presentation {
   list-style: none;
+  margin-top: 20px;
+  line-height: 40px;
 }
 .containerTextHeader {
   padding-bottom: 30px;
   padding-top: 30px;
 }
+
 /*----------BLUR--------------*/
 
 .navHeader,
