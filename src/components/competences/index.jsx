@@ -14,6 +14,7 @@ import WordPress from '../../assets/WordpressLogo.png'
 import SeoLogo from '../../assets/seoLogo.png'
 import '../../styles/competences.css'
 import Bootstrap from '../../assets/bootstrap.png'
+import ProgressBar from 'react-animated-progress-bar'
 // import SlideOutIn from '../slideOutIn'
 
 import { useRef } from 'react'
@@ -23,6 +24,7 @@ function Competences() {
   const elementRef = useRef(null)
   useSlideInOut(elementRef)
 
+  const myRef = document.querySelector('#containuerCompetences')
   return (
     <section id="containerCompetences">
       {/*<img src={Wave2} alt="" className="wave2" />}
@@ -32,65 +34,153 @@ function Competences() {
       </div>
       {/* ---------------------*/}
       <div className="competences">
-        <div className="langageAndFrameworks">
-          <div className="containerLangage">
-            <p className="titleLangage">Langages de programmation</p>
-            <div className="totalLangage">
-              <div className="html centerTotal">
-                <img src={Html} alt="logo Html" className="sizeLogo"></img>
-                <span className="littleMargin">Html </span>
-
-                <p>80 %</p>
-              </div>
-              <div className="css centerTotal">
-                <img src={Css} alt="logo Css" className="sizeLogo"></img>
-                <span className="littleMargin">Css </span>
-
-                <p>65%</p>
-              </div>
-              <div className="javascript centerTotal">
-                <img
-                  src={Javascript}
-                  alt="logo Javascript"
-                  className="sizeLogo"
-                ></img>
-                <span className="littleMargin">Javascript </span>
-
-                <p>60%</p>
-              </div>
+        <div className="containerLangage overFlash">
+          <p className="titleLangage">Langages de programmation</p>
+          <div className="totalLangage">
+            <div className="html centerTotal">
+              <img src={Html} alt="logo Html" className="sizeLogo"></img>
+              <span className="littleMargin">Html </span>
+              <ProgressBar
+                width="300px"
+                height="10px"
+                fontColor="#E44D26"
+                trackWidth="10"
+                percentage="90"
+                trackPathColor="grey"
+                trackBorderColor="black"
+                hollowBackgroundColor="black"
+                defColor={{
+                  fair: 'orangered',
+                  good: 'yellow',
+                  excellent: 'green',
+                  poor: 'red',
+                }}
+                scrollArea={myRef}
+              />
             </div>
-          </div>
-          <div className="framework">
-            <p className="titleFramework"> Framework</p>
-            <div className="totalFrameworks">
-              <div className="react centerTotal">
-                <img src={React} alt="logo React" className="sizeLogo"></img>
-                <span className="littleMargin"> React </span>
-
-                <p>90%</p>
-              </div>
-              <div className="sass centerTotal">
-                <img src={Sass} alt="logo Sass" className="sizeLogo"></img>
-                <span className="littleMargin">Sass</span>
-
-                <p>90%</p>
-              </div>
-              <div className="bootstrap centerTotal">
-                <img
-                  src={Bootstrap}
-                  alt="logo Bootstrap"
-                  className="sizeLogo"
-                ></img>
-                <span className="littleMargin">Bootstrap</span>
-
-                <p>60%</p>
-              </div>
+            <div className="css centerTotal">
+              <img src={Css} alt="logo Css" className="sizeLogo"></img>
+              <span className="littleMargin">Css </span>
+              <ProgressBar
+                width="300px"
+                height="10px"
+                fontColor="#214BE5"
+                trackWidth="10"
+                percentage="90"
+                trackPathColor="grey"
+                trackBorderColor="black"
+                hollowBackgroundColor="black"
+                defColor={{
+                  fair: 'orangered',
+                  good: 'yellow',
+                  excellent: 'green',
+                  poor: 'red',
+                }}
+                scrollArea={myRef}
+              />
+            </div>
+            <div className="javascript centerTotal">
+              <img
+                src={Javascript}
+                alt="logo Javascript"
+                className="sizeLogo"
+              ></img>
+              <span className="littleMargin">Javascript </span>
+              <ProgressBar
+                width="300px"
+                height="10px"
+                fontColor="#E5C62F"
+                trackWidth="10"
+                percentage="70"
+                trackPathColor="grey"
+                trackBorderColor="black"
+                hollowBackgroundColor="black"
+                defColor={{
+                  fair: 'orangered',
+                  good: 'yellow',
+                  excellent: 'green',
+                  poor: 'red',
+                }}
+                scrollArea={myRef}
+              />
             </div>
           </div>
         </div>
-        <div className="containerAutres">
-          <p className="titleAutres">Logiciel autres</p>
-          <div className="totalAutre">
+        <div className="framework overFlash">
+          <p className="titleFramework"> Framework</p>
+          <div className="totalFrameworks">
+            <div className="react centerTotal">
+              <img src={React} alt="logo React" className="sizeLogo"></img>
+              <span className="littleMargin"> React </span>
+              <ProgressBar
+                width="300px"
+                height="10px"
+                fontColor="#53C2E1"
+                trackWidth="10"
+                percentage="85"
+                trackPathColor="grey"
+                trackBorderColor="black"
+                hollowBackgroundColor="black"
+                defColor={{
+                  fair: 'orangered',
+                  good: 'yellow',
+                  excellent: 'green',
+                  poor: 'red',
+                }}
+                scrollArea={myRef}
+              />
+            </div>
+            <div className="sass centerTotal">
+              <img src={Sass} alt="logo Sass" className="sizeLogo"></img>
+              <span className="littleMargin">Sass</span>
+              <ProgressBar
+                width="300px"
+                height="10px"
+                fontColor="#D76698"
+                trackWidth="10"
+                percentage="90"
+                trackPathColor="grey"
+                trackBorderColor="black"
+                hollowBackgroundColor="black"
+                defColor={{
+                  fair: 'orangered',
+                  good: 'yellow',
+                  excellent: 'green',
+                  poor: 'red',
+                }}
+                scrollArea={myRef}
+              />
+            </div>
+            <div className="bootstrap centerTotal">
+              <img
+                src={Bootstrap}
+                alt="logo Bootstrap"
+                className="sizeLogo"
+              ></img>
+              <span className="littleMargin">Bootstrap</span>
+              <ProgressBar
+                width="300px"
+                height="10px"
+                fontColor="rgb(125 89 182);"
+                trackWidth="10"
+                percentage="40"
+                trackPathColor="grey"
+                trackBorderColor="black"
+                hollowBackgroundColor="black"
+                defColor={{
+                  fair: 'orangered',
+                  good: 'yellow',
+                  excellent: 'green',
+                  poor: 'red',
+                }}
+                scrollArea={myRef}
+              />
+            </div>
+          </div>
+        </div>
+        <div className="back-end overFlash">
+          <p className="titleBack-end">Logiciel Back-end</p>
+          <div className="totalBack-end">
             <div className="nodejs centerTotal">
               <img
                 src={NodeJs}
@@ -98,19 +188,25 @@ function Competences() {
                 className="sizeLogo node"
               ></img>
               <span className="littleMargin">Node.js </span>
-
-              <p>60%</p>
+              <ProgressBar
+                width="300px"
+                height="10px"
+                fontColor="#8AC800"
+                trackWidth="10"
+                percentage="60"
+                trackPathColor="grey"
+                trackBorderColor="black"
+                hollowBackgroundColor="black"
+                defColor={{
+                  fair: 'orangered',
+                  good: 'yellow',
+                  excellent: 'green',
+                  poor: 'red',
+                }}
+                scrollArea={myRef}
+              />
             </div>
-            <div className="photoshop centerTotal">
-              <img
-                src={Photoshop}
-                alt="logo Photoshop"
-                className="sizeLogo"
-              ></img>
-              <span className="littleMargin">Photoshop</span>
 
-              <p>60%</p>
-            </div>
             <div className="postman centerTotal">
               <img
                 src={Postman}
@@ -118,13 +214,25 @@ function Competences() {
                 className="sizeLogo postmanLogo"
               ></img>
               <span className="littleMargin">Postman </span>
-              <p>80%</p>
+              <ProgressBar
+                width="300px"
+                height="10px"
+                fontColor="#FD6C35"
+                trackWidth="10"
+                percentage="80"
+                trackPathColor="grey"
+                trackBorderColor="black"
+                hollowBackgroundColor="black"
+                defColor={{
+                  fair: 'orangered',
+                  good: 'yellow',
+                  excellent: 'green',
+                  poor: 'red',
+                }}
+                scrollArea={myRef}
+              />
             </div>
-            <div className="figma centerTotal">
-              <img src={Figma} alt="logo Figma" className="sizeLogo"></img>
-              <span className="littleMargin"> Figma </span>
-              <p>90%</p>
-            </div>
+
             <div className="insomnia centerTotal">
               <img
                 src={Insomnia}
@@ -132,19 +240,98 @@ function Competences() {
                 className="sizeLogo"
               ></img>
               <span className="littleMargin">Insomnia </span>
-
-              <p>80%</p>
+              <ProgressBar
+                width="300px"
+                height="10px"
+                fontColor="#5E00D2"
+                trackWidth="10"
+                percentage="80"
+                trackPathColor="grey"
+                trackBorderColor="black"
+                hollowBackgroundColor="black"
+                defColor={{
+                  fair: 'orangered',
+                  good: 'yellow',
+                  excellent: 'green',
+                  poor: 'red',
+                }}
+                scrollArea={myRef}
+              />
             </div>
             <div className="mongoDB centerTotal">
-              <img
-                src={Mongodb}
-                alt="logo MongoDb"
-                className="sizeLogo mongodb"
-              ></img>
+              <img src={Mongodb} alt="logo MongoDb" className=" mongodb"></img>
               <span className="littleMargin">MongoDB</span>
-
-              <p>80%</p>
+              <ProgressBar
+                width="300px"
+                height="10px"
+                fontColor="#67AC54"
+                trackWidth="10"
+                percentage="70"
+                trackPathColor="grey"
+                trackBorderColor="black"
+                hollowBackgroundColor="black"
+                defColor={{
+                  fair: 'orangered',
+                  good: 'yellow',
+                  excellent: 'green',
+                  poor: 'red',
+                }}
+                scrollArea={myRef}
+              />
             </div>
+          </div>
+        </div>
+        <div className="containerAutres overFlash">
+          <p className="titleAutres">Logiciel autres</p>
+          <div className="totalAutre">
+            <div className="photoshop centerTotal">
+              <img
+                src={Photoshop}
+                alt="logo Photoshop"
+                className="sizeLogo"
+              ></img>
+              <span className="littleMargin">Photoshop</span>
+              <ProgressBar
+                width="300px"
+                height="10px"
+                fontColor="#23BFF1"
+                trackWidth="10"
+                percentage="55"
+                trackPathColor="grey"
+                trackBorderColor="black"
+                hollowBackgroundColor="black"
+                defColor={{
+                  fair: 'orangered',
+                  good: 'yellow',
+                  excellent: 'green',
+                  poor: 'red',
+                }}
+                scrollArea={myRef}
+              />
+            </div>
+
+            <div className="figma centerTotal">
+              <img src={Figma} alt="logo Figma" className="sizeLogo"></img>
+              <span className="littleMargin"> Figma </span>
+              <ProgressBar
+                width="300px"
+                height="10px"
+                fontColor="white"
+                trackWidth="10"
+                percentage="100"
+                trackPathColor="grey"
+                trackBorderColor="black"
+                hollowBackgroundColor="black"
+                defColor={{
+                  fair: 'orangered',
+                  good: 'yellow',
+                  excellent: 'green',
+                  poor: 'red',
+                }}
+                scrollArea={myRef}
+              />
+            </div>
+
             <div className="github centerTotal">
               <img
                 src={Github}
@@ -152,14 +339,44 @@ function Competences() {
                 className="sizeLogo githubLogo"
               ></img>
               <span className="littleMargin">Github </span>
-
-              <p>90%</p>
+              <ProgressBar
+                width="300px"
+                height="10px"
+                fontColor="black"
+                trackWidth="10"
+                percentage="85"
+                trackPathColor="grey"
+                trackBorderColor="black"
+                hollowBackgroundColor="white"
+                defColor={{
+                  fair: 'orangered',
+                  good: 'yellow',
+                  excellent: 'green',
+                  poor: 'red',
+                }}
+                scrollArea={myRef}
+              />
             </div>
             <div className="seo centerTotal">
               <img src={SeoLogo} alt="logo seo" className="sizeLogo"></img>
               <span className="littleMargin">Marketing Seo</span>
-
-              <p>80%</p>
+              <ProgressBar
+                width="300px"
+                height="10px"
+                fontColor="#9F2525"
+                trackWidth="10"
+                percentage="90"
+                trackPathColor="grey"
+                trackBorderColor="black"
+                hollowBackgroundColor="black"
+                defColor={{
+                  fair: 'orangered',
+                  good: 'yellow',
+                  excellent: 'green',
+                  poor: 'red',
+                }}
+                scrollArea={myRef}
+              />
             </div>
             <div className="wordpress centerTotal">
               <img
@@ -168,7 +385,23 @@ function Competences() {
                 className="sizeLogo wordPressLogo"
               ></img>
               <span className="littleMargin">Wordpress </span>
-              <p>60%</p>
+              <ProgressBar
+                width="300px"
+                height="10px"
+                fontColor="#2A8DB1"
+                trackWidth="10"
+                percentage="40"
+                trackPathColor="grey"
+                trackBorderColor="black"
+                hollowBackgroundColor="black"
+                defColor={{
+                  fair: 'orange',
+                  good: 'yello',
+                  excellent: 'green',
+                  poor: 'red',
+                }}
+                scrollArea={myRef}
+              />
             </div>
           </div>
         </div>

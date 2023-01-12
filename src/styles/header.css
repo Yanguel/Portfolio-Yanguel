@@ -45,6 +45,9 @@ header {
 .ulHeader > li {
   padding: 10px;
 }
+.navLi {
+  color: white;
+}
 .ulHeader > li:hover {
   background: linear-gradient(90deg, #03a9f4, #f441a5, #03a9f4);
   border-radius: 30px;

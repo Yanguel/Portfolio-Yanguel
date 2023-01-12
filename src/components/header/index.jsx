@@ -14,17 +14,28 @@ function Header() {
         {' '}
         <ul className="ulHeader">
           <li>
-            <a href="#containerQuiSuisJe "> Qui suis-je ? </a>
+            <a href="#containerQuiSuisJe " className="navLi">
+              {' '}
+              Qui suis-je ?{' '}
+            </a>
           </li>
 
           <li>
-            <a href="#realisations-Title"> Réalisations </a>
+            <a href="#realisations-Title" className="navLi">
+              {' '}
+              Réalisations{' '}
+            </a>
           </li>
           <li>
-            <a href="#containerCompetences"> Compétences </a>
+            <a href="#containerCompetences" className="navLi">
+              {' '}
+              Compétences{' '}
+            </a>
           </li>
           <li>
-            <a href="#contact">Contact </a>
+            <a href="#contact" className="navLi">
+              Contact{' '}
+            </a>
           </li>
         </ul>
       </nav>

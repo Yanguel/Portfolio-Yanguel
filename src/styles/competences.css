@@ -1,13 +1,12 @@
 #containerCompetences {
   color: white;
-  margin: 40px;
+  margin: 50px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 .competences {
   display: flex;
-  justify-content: space-around;
-  flex-direction: column;
+  justify-content: space-between;
 }
 h2 {
   font-size: 30px;
@@ -20,10 +19,19 @@ h2 {
   text-align: center;
 }
 .titleLangage,
-.titleAutres {
+.titleAutres,
+.titleBack-end,
+.titleFramework {
   text-align: center;
+  font-size: 20px;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  background-color: black;
+  padding: 15px;
+  border-radius: 15px;
 }
 .containerLangage,
+.back-end,
 .containerAutres,
 .framework {
   background: linear-gradient(
@@ -38,42 +46,60 @@ h2 {
   border-radius: 24px;
   padding: 10px;
 }
-.containerLangage {
-  width: 50%;
-}
+.containerLangage,
+.containerAutres,
+.back-end,
 .framework {
-  width: 50%;
+  width: 22%;
+}
+.overFlash:hover {
+  -webkit-box-shadow: 12px -5px 15px 5px #80c7ff, 12px 10px 15px 7px #e488ff,
+    -10px -7px 27px 1px #8e5cff, 0px 0px 15px 7px rgba(0, 0, 0, 0),
+    0px 0px 30px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 12px -5px 15px 5px #80c7ff, 12px 10px 15px 7px #e488ff,
+    -10px -7px 27px 1px #8e5cff, 0px 0px 15px 7px rgba(0, 0, 0, 0),
+    0px 0px 30px 10px rgba(0, 0, 0, 0.22);
 }
 .langageAndFrameworks {
   display: flex;
+  justify-content: space-evenly;
 }
 .sizeLogo {
   width: 48px;
   height: 48px;
 }
 .githubLogo,
-.wordPressLogo .mongodb {
+.wordPressLogo {
   height: 40px;
   width: 65px;
 }
+.mongodb {
+  width: 65px;
+  height: 45px;
+}
 .centerTotal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 5px;
   text-align: center;
 }
 .littleMargin {
   margin-left: 5px;
   font-size: 20px;
 }
-.titleFramework {
-  text-align: center;
-}
-.totalFrameworks,
-.totalLangage,
-.totalAutre {
+.totalFrameworks {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+.totalLangage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.totalAutre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.progress-bar {
+  display: flex;
+  justify-content: center;
 }
