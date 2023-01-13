@@ -64,12 +64,12 @@ h2 {
   display: flex;
   justify-content: space-evenly;
 }
-.sizeLogo {
+.sizeLogo,
+.wordPressLogo {
   width: 48px;
   height: 48px;
 }
-.githubLogo,
-.wordPressLogo {
+.githubLogo {
   height: 40px;
   width: 65px;
 }
@@ -79,6 +79,9 @@ h2 {
 }
 .centerTotal {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .littleMargin {
   margin-left: 5px;
@@ -87,17 +90,22 @@ h2 {
 .totalFrameworks {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 .totalLangage {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+}
+.totalBack-end {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .totalAutre {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 .progress-bar {
   display: flex;

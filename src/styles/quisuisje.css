@@ -9,6 +9,7 @@
   align-items: center;
   flex-direction: row;
 }
+
 .containerQuiSuisJe {
   width: 50%;
   margin-left: 100px;
@@ -21,9 +22,9 @@
 }
 .photoCv:hover {
   -webkit-box-shadow: -10px 0px 13px -7px white, 10px 0px 13px -7px white,
-    0px 0px 33px 18px rgba(0, 0, 0, 0.63);
+    0px 0px 33px 18px rgba(0, 0, 0, 1);
   box-shadow: -10px 0px 13px -7px #123650, 10px 0px 13px -7px #123650,
-    0px 0px 33px 18px rgba(196, 196, 196, 0.63);
+    0px 0px 33px 18px rgba(196, 196, 196, 1);
 }
 .header,
 .finisher-header {

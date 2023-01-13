@@ -24,6 +24,7 @@ h4 {
 }
 .textAndEmail {
   text-align: center;
+  margin-bottom: 40px;
 }
 .btnEmail {
   background: rgb(3, 169, 244);
@@ -48,12 +49,14 @@ h4 {
   animation: rotationColor 0.8s linear infinite both;
 }
 
+.trouvezMoi {
+  text-align: center;
+  margin-bottom: 20px;
+}
 .pContact {
   color: white;
   font-size: 20px;
-}
-.fa-envelope {
-  color: white;
+  margin-bottom: 45px;
 }
 .trouvezMoi {
   text-decoration: underline;
@@ -86,3 +89,19 @@ h4 {
   border-radius: 15px;
   width: 65px;
 }
+
+.enveloppe {
+  width: 40px;
+  margin-bottom: 15px;
+  animation: scaling 0.5s infinite alternate linear;
+}
+
+@keyframes scaling {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/*------------------------------------------------------*/

@@ -1,10 +1,12 @@
 import React from 'react'
 import Profil from '../../assets/profil.jpeg'
+import Loader from '../loader'
 import '../../styles/header.css'
 import '../../styles/btnLight.css'
 function Header() {
   return (
     <header>
+      <Loader />
       <div className="divProfil">
         <img src={Profil} alt="profil" className="profilHeader" />
       </div>

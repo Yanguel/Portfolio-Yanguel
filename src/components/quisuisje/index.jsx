@@ -31,9 +31,9 @@ function QuiSuisJe() {
           utile lors d'un projet en groupe comme l'
           <strong>écoute</strong> ou bien la <strong>remise en question</strong>
           . <br />
-          Je suis <strong>motivé et enthousiaste</strong> à l'idée de mettre mes
-          compétences et mon savoir-faire au service de projets passionnants.{' '}
-          <br />
+          Je suis <strong>ambitieux et enthousiaste</strong> à l'idée de mettre
+          mes compétences et mon savoir-faire au service de projets
+          passionnants. <br />
           Je vous invite à découvrir mes projets, qui vous donneront un aperçu
           de mon parcours et de mes compétences.
         </p>

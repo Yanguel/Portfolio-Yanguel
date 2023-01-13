@@ -3,6 +3,7 @@ import Linkedin from '../../assets/linkedinLogo.png'
 import Github from '../../assets/github1.png'
 import { useRef } from 'react'
 import useSlideInOut from '../slideRightIn'
+import Enveloppe from '../../assets/enveloppe.svg'
 function Contact() {
   const elementRef = useRef(null)
   useSlideInOut(elementRef)
@@ -21,16 +22,20 @@ function Contact() {
             Ci dessous vous trouverez mon Email personnel afin de me joindre
             ainsi que mon Linkedin et mon GitHub.
           </p>
-          <p>
-            <i className="fa-regular fa-envelope fa-xl fa-beat"></i>
-          </p>
+          <div>
+            <img
+              src={Enveloppe}
+              alt="Icone enveloppe email"
+              className="enveloppe"
+            />
+          </div>
           <a href="mailto:yanguelcornillet@yahoo.com">
             <button className="btnEmail">Yanguelcornillet@yahoo.com</button>
           </a>
-          <p className="trouvezMoi">Trouvez moi sur :</p>
         </div>
 
         <div className="socialMedia">
+          <p className="trouvezMoi">Trouvez moi sur :</p>
           <a href="https://www.linkedin.com/in/yanguel-cornillet-8a55281b5/">
             <div className="linkedin">
               <img

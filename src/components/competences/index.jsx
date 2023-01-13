@@ -27,7 +27,6 @@ function Competences() {
   const myRef = document.querySelector('#containuerCompetences')
   return (
     <section id="containerCompetences">
-      {/*<img src={Wave2} alt="" className="wave2" />}
       {/* Lié à l'animation slide */}
       <div ref={elementRef} className="slide-in-out titleCompetences">
         <h2> Mes Compétences </h2>
@@ -41,7 +40,7 @@ function Competences() {
               <img src={Html} alt="logo Html" className="sizeLogo"></img>
               <span className="littleMargin">Html </span>
               <ProgressBar
-                width="300px"
+                width="250px"
                 height="10px"
                 fontColor="#E44D26"
                 trackWidth="10"
@@ -58,11 +57,14 @@ function Competences() {
                 scrollArea={myRef}
               />
             </div>
+            <div className="separateurCompetences">
+              ------------------------------------------
+            </div>
             <div className="css centerTotal">
               <img src={Css} alt="logo Css" className="sizeLogo"></img>
               <span className="littleMargin">Css </span>
               <ProgressBar
-                width="300px"
+                width="250px"
                 height="10px"
                 fontColor="#214BE5"
                 trackWidth="10"
@@ -79,6 +81,9 @@ function Competences() {
                 scrollArea={myRef}
               />
             </div>
+            <div className="separateurCompetences">
+              ------------------------------------------
+            </div>
             <div className="javascript centerTotal">
               <img
                 src={Javascript}
@@ -87,7 +92,7 @@ function Competences() {
               ></img>
               <span className="littleMargin">Javascript </span>
               <ProgressBar
-                width="300px"
+                width="250px"
                 height="10px"
                 fontColor="#E5C62F"
                 trackWidth="10"
@@ -106,6 +111,7 @@ function Competences() {
             </div>
           </div>
         </div>
+
         <div className="framework overFlash">
           <p className="titleFramework"> Framework</p>
           <div className="totalFrameworks">
@@ -113,7 +119,7 @@ function Competences() {
               <img src={React} alt="logo React" className="sizeLogo"></img>
               <span className="littleMargin"> React </span>
               <ProgressBar
-                width="300px"
+                width="250px"
                 height="10px"
                 fontColor="#53C2E1"
                 trackWidth="10"
@@ -130,11 +136,14 @@ function Competences() {
                 scrollArea={myRef}
               />
             </div>
+            <div className="separateurCompetences">
+              ------------------------------------------
+            </div>
             <div className="sass centerTotal">
               <img src={Sass} alt="logo Sass" className="sizeLogo"></img>
               <span className="littleMargin">Sass</span>
               <ProgressBar
-                width="300px"
+                width="250px"
                 height="10px"
                 fontColor="#D76698"
                 trackWidth="10"
@@ -151,6 +160,9 @@ function Competences() {
                 scrollArea={myRef}
               />
             </div>
+            <div className="separateurCompetences">
+              ------------------------------------------
+            </div>
             <div className="bootstrap centerTotal">
               <img
                 src={Bootstrap}
@@ -159,7 +171,7 @@ function Competences() {
               ></img>
               <span className="littleMargin">Bootstrap</span>
               <ProgressBar
-                width="300px"
+                width="250px"
                 height="10px"
                 fontColor="rgb(125 89 182);"
                 trackWidth="10"
@@ -189,7 +201,7 @@ function Competences() {
               ></img>
               <span className="littleMargin">Postman </span>
               <ProgressBar
-                width="300px"
+                width="250px"
                 height="10px"
                 fontColor="#FD6C35"
                 trackWidth="10"
@@ -206,7 +218,9 @@ function Competences() {
                 scrollArea={myRef}
               />
             </div>
-
+            <div className="separateurCompetences">
+              ------------------------------------------
+            </div>
             <div className="insomnia centerTotal">
               <img
                 src={Insomnia}
@@ -215,7 +229,7 @@ function Competences() {
               ></img>
               <span className="littleMargin">Insomnia </span>
               <ProgressBar
-                width="300px"
+                width="250px"
                 height="10px"
                 fontColor="#5E00D2"
                 trackWidth="10"
@@ -232,6 +246,9 @@ function Competences() {
                 scrollArea={myRef}
               />
             </div>
+            <div className="separateurCompetences">
+              ------------------------------------------
+            </div>
             <div className="nodejs centerTotal">
               <img
                 src={NodeJs}
@@ -240,7 +257,7 @@ function Competences() {
               ></img>
               <span className="littleMargin">Node.js </span>
               <ProgressBar
-                width="300px"
+                width="250px"
                 height="10px"
                 fontColor="#8AC800"
                 trackWidth="10"
@@ -257,11 +274,14 @@ function Competences() {
                 scrollArea={myRef}
               />
             </div>
+            <div className="separateurCompetences">
+              ------------------------------------------
+            </div>
             <div className="mongoDB centerTotal">
               <img src={Mongodb} alt="logo MongoDb" className=" mongodb"></img>
               <span className="littleMargin">MongoDB</span>
               <ProgressBar
-                width="300px"
+                width="250px"
                 height="10px"
                 fontColor="#67AC54"
                 trackWidth="10"
@@ -287,7 +307,7 @@ function Competences() {
               <img src={Figma} alt="logo Figma" className="sizeLogo"></img>
               <span className="littleMargin"> Figma </span>
               <ProgressBar
-                width="300px"
+                width="250px"
                 height="10px"
                 fontColor="white"
                 trackWidth="10"
@@ -304,6 +324,9 @@ function Competences() {
                 scrollArea={myRef}
               />
             </div>
+            <div className="separateurCompetences">
+              ------------------------------------------
+            </div>
             <div className="github centerTotal">
               <img
                 src={Github}
@@ -312,7 +335,7 @@ function Competences() {
               ></img>
               <span className="littleMargin">Github </span>
               <ProgressBar
-                width="300px"
+                width="250px"
                 height="10px"
                 fontColor="black"
                 trackWidth="10"
@@ -329,11 +352,14 @@ function Competences() {
                 scrollArea={myRef}
               />
             </div>
+            <div className="separateurCompetences">
+              ------------------------------------------
+            </div>
             <div className="seo centerTotal">
               <img src={SeoLogo} alt="logo seo" className="sizeLogo"></img>
               <span className="littleMargin">Marketing Seo</span>
               <ProgressBar
-                width="300px"
+                width="250px"
                 height="10px"
                 fontColor="#9F2525"
                 trackWidth="10"
@@ -350,6 +376,9 @@ function Competences() {
                 scrollArea={myRef}
               />
             </div>
+            <div className="separateurCompetences">
+              ------------------------------------------
+            </div>
             <div className="photoshop centerTotal">
               <img
                 src={Photoshop}
@@ -358,7 +387,7 @@ function Competences() {
               ></img>
               <span className="littleMargin">Photoshop</span>
               <ProgressBar
-                width="300px"
+                width="250px"
                 height="10px"
                 fontColor="#23BFF1"
                 trackWidth="10"
@@ -375,7 +404,9 @@ function Competences() {
                 scrollArea={myRef}
               />
             </div>
-
+            <div className="separateurCompetences">
+              ------------------------------------------
+            </div>
             <div className="wordpress centerTotal">
               <img
                 src={WordPress}
@@ -384,7 +415,7 @@ function Competences() {
               ></img>
               <span className="littleMargin">Wordpress </span>
               <ProgressBar
-                width="300px"
+                width="250px"
                 height="10px"
                 fontColor="#2A8DB1"
                 trackWidth="10"
