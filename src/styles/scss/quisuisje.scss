@@ -30,13 +30,7 @@
     }
     .btnCV {
       background: rgb(3, 169, 244);
-      background: linear-gradient(
-        100deg,
-        rgba(3, 169, 244, 0.8) 0%,
-        rgba(47, 47, 47, 0.8) 41%,
-        rgba(244, 65, 165, 0.8) 60%,
-        rgba(3, 169, 244, 0.8) 87%
-      );
+      background: $linear-gradientBTN;
       border-radius: 11px;
       box-shadow: 0 1px #444444;
       padding: 20px 45px;
