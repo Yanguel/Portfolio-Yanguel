@@ -1,4 +1,4 @@
-import '../../styles/quisuisje.css'
+import '../../styles/css/quisuisje.css'
 import CV from '../../assets/CVYanguelCornillet.pdf'
 import PhotoCv from '../../assets/CVYanguelCornillet.png'
 // import Slider from '../scroll'
@@ -26,7 +26,8 @@ function QuiSuisJe() {
           mes connaissances et devenir un développeur web fullstack, domaine qui
           m’intéresse depuis de nombreuses années. <br />
           Mes années d'expériences dans le commerce m'ont permis d’acquérir des
-          compétences importantes telles que l’<strong>organisation</strong>, la
+          compétences importantes telles que l’
+          <strong>organisation</strong>, la
           <strong> ponctualité</strong> ainsi que des qualités relationnelles
           utile lors d'un projet en groupe comme l'
           <strong>écoute</strong> ou bien la <strong>remise en question</strong>
@@ -43,6 +44,9 @@ function QuiSuisJe() {
       </div>
       <div className="CV">
         <img src={PhotoCv} alt=" Visuel du CV " className="photoCv"></img>
+      </div>
+      <div className=" iconeFlecheQuiSuisJe slide-bottom">
+        <i className="fa-solid fa-circle-arrow-down fa-xl arrow"></i>
       </div>
     </section>
   )

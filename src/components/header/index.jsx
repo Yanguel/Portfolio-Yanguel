@@ -1,8 +1,7 @@
 import React from 'react'
 import Profil from '../../assets/profil.jpeg'
 import Loader from '../loader'
-import '../../styles/header.css'
-import '../../styles/btnLight.css'
+import '../../styles/css/header.css'
 function Header() {
   return (
     <header>
@@ -62,12 +61,7 @@ function Header() {
               {' '}
               Développeur intégrateur web.
             </strong>{' '}
-            <ol className="presentation">
-              <span className="titleUl">Voici dans ce portfolio :</span>
-              <li>• Mes réalisations jusqu'à présent. </li>
-              <li>• Mes compétences actuelles dans le développement web.</li>
-            </ol>
-            En vous souhaitant une bonne visite.
+            <p className="presentation">En vous souhaitant une bonne visite.</p>
           </div>
         </div>
       </div>

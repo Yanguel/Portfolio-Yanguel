@@ -17,7 +17,7 @@ a {
   color: black;
 }
 #root {
-  background-image: url('../assets/animBackground11.svg');
+  background-image: url('../../assets/animBackground11.svg');
   background-position: center;
   background-size: cover;
   object-fit: cover;

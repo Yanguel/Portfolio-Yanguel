@@ -1,4 +1,4 @@
-import '../../styles/slideOutIn.css'
+import '../../styles/css/slideOutIn.css'
 
 import { useEffect } from 'react'
 

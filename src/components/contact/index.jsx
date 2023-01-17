@@ -1,4 +1,4 @@
-import '../../styles/contact.css'
+import '../../styles/css/contact.css'
 import Linkedin from '../../assets/linkedinLogo.png'
 import Github from '../../assets/github1.png'
 import { useRef } from 'react'

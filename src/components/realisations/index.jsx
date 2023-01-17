@@ -1,7 +1,7 @@
-import '../../styles/realisations.css'
+import '../../styles/css/realisations.css'
 import { useRef } from 'react'
 import useSlideInOut from '../slideRightIn'
-import '../../styles/rotateCard.css'
+import '../../styles/css/rotateCard.css'
 import GitHub from '../../assets/github.png'
 function Realisations() {
   const elementRef = useRef(null)

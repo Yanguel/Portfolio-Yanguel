@@ -1,18 +1,13 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html,
 body {
-  font-family: 'Noto Sans JP', sans-serif;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #d9afd9;
-  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
 }
 
 .card {
@@ -53,22 +48,22 @@ body {
   overflow: hidden;
 }
 .card-front {
-  background-image: url('../assets/otysbarber1.PNG');
+  background-image: url('../../assets/otysbarber1.PNG');
 }
 .card-front2 {
-  background-image: url('../assets/kasa3.PNG');
+  background-image: url('../../assets/kasa3.PNG');
 }
 .card-front3 {
-  background-image: url('../assets/hot3.png');
+  background-image: url('../../assets/hot3.png');
 }
 .card-front4 {
-  background-image: url('../assets/kanap2.PNG');
+  background-image: url('../../assets/kanap2.PNG');
 }
 .card-front5 {
-  background-image: url('../assets/ohmyfood2.PNG');
+  background-image: url('../../assets/ohmyfood2.PNG');
 }
 .card-front6 {
-  background-image: url('../assets/panthere1.png');
+  background-image: url('../../assets/panthere1.png');
 }
 .before:before {
   content: '';
@@ -132,7 +127,7 @@ body {
   border-radius: 8px;
   background-size: cover;
   background-position: center center;
-  background-image: url('../assets/otysbarber2.PNG');
+  background-image: url('../../assets/otysbarber2.PNG');
 }
 .card-back2 .card-image2 {
   width: 240px;
@@ -140,7 +135,7 @@ body {
   margin: 0 auto;
   border: solid 1px #cecece;
   border-radius: 8px;
-  background-image: url('../assets/kasa1.PNG');
+  background-image: url('../../assets/kasa1.PNG');
   background-size: cover;
   background-position: center center;
 }
@@ -150,7 +145,7 @@ body {
   margin: 0 auto;
   border: solid 1px #cecece;
   border-radius: 8px;
-  background-image: url('../assets/hot2.PNG');
+  background-image: url('../../assets/hot2.PNG');
   background-size: cover;
   background-position: center center;
 }
@@ -160,7 +155,7 @@ body {
   margin: 0 auto;
   border: solid 1px #cecece;
   border-radius: 8px;
-  background-image: url('../assets/kanap3.PNG');
+  background-image: url('../../assets/kanap3.PNG');
   background-size: cover;
   background-position: center center;
 }
@@ -170,7 +165,7 @@ body {
   margin: 0 auto;
   border: solid 1px #cecece;
   border-radius: 8px;
-  background-image: url('../assets/ohmyfood3.PNG');
+  background-image: url('../../assets/ohmyfood3.PNG');
   background-size: cover;
   background-position: center center;
 }
@@ -180,7 +175,7 @@ body {
   margin: 0 auto;
   border: solid 1px #cecece;
   border-radius: 8px;
-  background-image: url('../assets/panthere2.PNG');
+  background-image: url('../../assets/panthere2.PNG');
   background-size: cover;
   background-position: center center;
 }
