@@ -1,13 +1,35 @@
+@import './mixins/mixins';
+@import './placeholders/placeholders';
+@import './variables/variable';
+
+#realisations-Title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+  .titleRealisations {
+    font-size: 24px;
+    margin-bottom: 45px;
+    color: white;
+    text-decoration: underline;
+  }
+}
+h3 {
+  font-size: 30px;
+}
+.containerRealisations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+  background: rgb(3, 169, 244);
+  background: $linear-gradientCompetences;
+  border-radius: 30px;
+  margin: 0px 30px 0px 30px;
+}
 * {
   margin: 0;
   padding: 0;
-}
-
-body {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .card {
@@ -89,22 +111,22 @@ body {
   color: white;
 }
 .card-front .card-content p {
-  color: #ececec;
+  color: $fond-gris;
 }
 .card-front2 .card-content2 p {
-  color: #ececec;
+  color: $fond-gris;
 }
 .card-front3 .card-content3 p {
-  color: #ececec;
+  color: $fond-gris;
 }
 .card-front4 .card-content4 p {
-  color: #ececec;
+  color: $fond-gris;
 }
 .card-front5 .card-content5 p {
-  color: #ececec;
+  color: $fond-gris;
 }
 .card-front6 .card-content6 p {
-  color: #ececec;
+  color: $fond-gris;
 }
 .card-back,
 .card-back2,
@@ -122,62 +144,38 @@ body {
 .card-back .card-image {
   width: 237px;
   height: 172px;
-  margin: 0 auto;
-  border: solid 1px #cecece;
-  border-radius: 8px;
-  background-size: cover;
-  background-position: center center;
+  @extend %cardBorderBackground;
   background-image: url('../../assets/otysbarber2.PNG');
 }
 .card-back2 .card-image2 {
   width: 240px;
   height: 137px;
-  margin: 0 auto;
-  border: solid 1px #cecece;
-  border-radius: 8px;
+  @extend %cardBorderBackground;
   background-image: url('../../assets/kasa1.PNG');
-  background-size: cover;
-  background-position: center center;
 }
 .card-back3 .card-image3 {
   width: 240px;
   height: 156px;
-  margin: 0 auto;
-  border: solid 1px #cecece;
-  border-radius: 8px;
   background-image: url('../../assets/hot2.PNG');
-  background-size: cover;
-  background-position: center center;
+  @extend %cardBorderBackground;
 }
 .card-back4 .card-image4 {
   width: 240px;
   height: 140px;
-  margin: 0 auto;
-  border: solid 1px #cecece;
-  border-radius: 8px;
+  @extend %cardBorderBackground;
   background-image: url('../../assets/kanap3.PNG');
-  background-size: cover;
-  background-position: center center;
 }
 .card-back5 .card-image5 {
   width: 240px;
   height: 192px;
-  margin: 0 auto;
-  border: solid 1px #cecece;
-  border-radius: 8px;
+  @extend %cardBorderBackground;
   background-image: url('../../assets/ohmyfood3.PNG');
-  background-size: cover;
-  background-position: center center;
 }
 .card-back6 .card-image6 {
   width: 240px;
   height: 154px;
-  margin: 0 auto;
-  border: solid 1px #cecece;
-  border-radius: 8px;
+  @extend %cardBorderBackground;
   background-image: url('../../assets/panthere2.PNG');
-  background-size: cover;
-  background-position: center center;
 }
 .margin p {
   margin-top: 12px;
@@ -190,9 +188,7 @@ body {
   height: 42px;
   border-radius: 100%;
   margin: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex-center;
   text-decoration: none;
   transition: opacity 0.2s;
 }
@@ -214,3 +210,5 @@ body {
 .card6:hover .card-front6 {
   opacity: 0;
 }
+
+@import './keyframes/keyframes';

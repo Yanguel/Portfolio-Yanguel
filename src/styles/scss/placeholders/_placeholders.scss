@@ -8,3 +8,10 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+%cardBorderBackground {
+  margin: 0 auto;
+  border: solid 1px #cecece;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center center;
+}
