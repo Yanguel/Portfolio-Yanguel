@@ -72,3 +72,131 @@
     transform: translateY(100px);
   }
 }
+/*----------------QuiSuisJe--------------------------*/
+@keyframes rotationColor {
+  from,
+  to {
+    background: linear-gradient(
+      0deg,
+      rgba(3, 169, 244, 0.8) 0%,
+      rgba(47, 47, 47, 0.8) 41%,
+      rgba(244, 65, 165, 0.8) 60%,
+      rgba(3, 169, 244, 0.8) 87%
+    );
+  }
+  10% {
+    background: linear-gradient(
+      36deg,
+      rgba(3, 169, 244, 0.8) 0%,
+      rgba(47, 47, 47, 0.8) 41%,
+      rgba(244, 65, 165, 0.8) 60%,
+      rgba(3, 169, 244, 0.8) 87%
+    );
+  }
+  20% {
+    background: linear-gradient(
+      72deg,
+      rgba(3, 169, 244, 0.8) 0%,
+      rgba(47, 47, 47, 0.8) 41%,
+      rgba(244, 65, 165, 0.8) 60%,
+      rgba(3, 169, 244, 0.8) 87%
+    );
+  }
+  30% {
+    background: linear-gradient(
+      108deg,
+      rgba(3, 169, 244, 0.8) 0%,
+      rgba(47, 47, 47, 0.8) 41%,
+      rgba(244, 65, 165, 0.8) 60%,
+      rgba(3, 169, 244, 0.8) 87%
+    );
+  }
+  40% {
+    background: linear-gradient(
+      144deg,
+      rgba(3, 169, 244, 0.8) 0%,
+      rgba(47, 47, 47, 0.8) 41%,
+      rgba(244, 65, 165, 0.8) 60%,
+      rgba(3, 169, 244, 0.8) 87%
+    );
+  }
+  50% {
+    background: linear-gradient(
+      180deg,
+      rgba(3, 169, 244, 0.8) 0%,
+      rgba(47, 47, 47, 0.8) 41%,
+      rgba(244, 65, 165, 0.8) 60%,
+      rgba(3, 169, 244, 0.8) 87%
+    );
+  }
+  60% {
+    background: linear-gradient(
+      216deg,
+      rgba(3, 169, 244, 0.8) 0%,
+      rgba(47, 47, 47, 0.8) 41%,
+      rgba(244, 65, 165, 0.8) 60%,
+      rgba(3, 169, 244, 0.8) 87%
+    );
+  }
+  70% {
+    background: linear-gradient(
+      252deg,
+      rgba(3, 169, 244, 0.8) 0%,
+      rgba(47, 47, 47, 0.8) 41%,
+      rgba(244, 65, 165, 0.8) 60%,
+      rgba(3, 169, 244, 0.8) 87%
+    );
+  }
+  80% {
+    background: linear-gradient(
+      288deg,
+      rgba(3, 169, 244, 0.8) 0%,
+      rgba(47, 47, 47, 0.8) 41%,
+      rgba(244, 65, 165, 0.8) 60%,
+      rgba(3, 169, 244, 0.8) 87%
+    );
+  }
+  90% {
+    background: linear-gradient(
+      324deg,
+      rgba(3, 169, 244, 0.8) 0%,
+      rgba(47, 47, 47, 0.8) 41%,
+      rgba(244, 65, 165, 0.8) 60%,
+      rgba(3, 169, 244, 0.8) 87%
+    );
+  }
+  100% {
+    background: linear-gradient(
+      360deg,
+      rgba(3, 169, 244, 0.8) 0%,
+      rgba(47, 47, 47, 0.8) 41%,
+      rgba(244, 65, 165, 0.8) 60%,
+      rgba(3, 169, 244, 0.8) 87%
+    );
+  }
+}
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* ------------------------------------------------*/

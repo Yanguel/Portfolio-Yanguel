@@ -1,7 +1,6 @@
 @import './mixins/mixins';
 @import './placeholders/placeholders';
 @import './variables/variable';
-@import './keyframes/keyframes';
 
 @font-face {
   font-family: 'AbrilFatFace';
@@ -227,3 +226,4 @@ header {
   animation: slide-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
     alternate-reverse both;
 }
+@import './keyframes/keyframes';

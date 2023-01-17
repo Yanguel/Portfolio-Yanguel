@@ -1,0 +1,92 @@
+@import './mixins/mixins';
+@import './placeholders/placeholders';
+@import './variables/variable';
+
+#quiSuisJe {
+  color: white;
+  text-align: center;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 100vh !important;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  .containerQuiSuisJe {
+    width: 50%;
+    margin-left: 100px;
+    .titleQuiSuisJe {
+      margin: 0px;
+      font-size: 24px;
+      text-decoration: underline;
+    }
+    .pQuiSuisJe {
+      font-size: 20px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      position: relative;
+      z-index: 7;
+      line-height: 35px;
+    }
+    .btnCV {
+      background: rgb(3, 169, 244);
+      background: linear-gradient(
+        100deg,
+        rgba(3, 169, 244, 0.8) 0%,
+        rgba(47, 47, 47, 0.8) 41%,
+        rgba(244, 65, 165, 0.8) 60%,
+        rgba(3, 169, 244, 0.8) 87%
+      );
+      border-radius: 11px;
+      box-shadow: 0 1px #444444;
+      padding: 20px 45px;
+      color: #ffffff;
+      display: inline-block;
+      font: normal bold 20px/1 'Open Sans', sans-serif;
+      text-align: center;
+      text-shadow: 1px 1px #000000;
+      cursor: pointer;
+    }
+    .btnCV:hover {
+      animation: rotationColor 0.8s linear infinite both;
+    }
+  }
+}
+.CV {
+  width: 50%;
+  .photoCv {
+    width: 50%;
+  }
+}
+.photoCv:hover {
+  -webkit-box-shadow: -10px 0px 13px -7px white, 10px 0px 13px -7px white,
+    0px 0px 33px 18px rgba(0, 0, 0, 1);
+  box-shadow: -10px 0px 13px -7px #123650, 10px 0px 13px -7px #123650,
+    0px 0px 33px 18px rgba(196, 196, 196, 1);
+}
+.iconeFlecheQuiSuisJe {
+  position: absolute;
+  bottom: 5%;
+  left: 48%;
+  .arrow {
+    font-size: 50px;
+  }
+}
+.header,
+.finisher-header {
+  width: 100%;
+  height: 300px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+/* ------ Animation Qui suis je ----*/
+.slide-in-right {
+  -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* ------------------- */
+@import './keyframes/keyframes';
