@@ -1,3 +1,4 @@
+/*sass --watch src/styles/scss/header.scss src/styles/css/header.css */
 @import './mixins/mixins';
 @import './placeholders/placeholders';
 @import './variables/variable';
@@ -49,7 +50,6 @@ header {
 
 .ulHeader > li {
   padding: 10px;
-  margin: 5px;
 }
 .ulHeader > li:hover {
   background: $linear-gradient;
@@ -226,4 +226,37 @@ header {
   animation: slide-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
     alternate-reverse both;
 }
+
+/* Responsive Tablette */
+@media screen and (max-width: 1024px) and (min-width: 520px) {
+  .navHeader {
+    width: auto;
+
+    .containerTextHeader {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  .containerTextIcone {
+    min-width: 60%;
+  }
+
+  .divProfil {
+    left: 39%;
+    top: 13%;
+    .profilHeader {
+      width: 140px;
+    }
+  }
+  .textHeader {
+    .titleHeaderDev {
+      line-height: 1.8;
+    }
+  }
+}
+
+/* Responsive Téléphone */
+@media screen and (max-width: 519px) and (min-width: 320px) {
+}
+
 @import './keyframes/keyframes';

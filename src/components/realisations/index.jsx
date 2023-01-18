@@ -28,16 +28,16 @@ function Realisations() {
                 <div class="card-image"></div>
               </div>
               <div class="card-content-back">
-                <p>
-                  - Création du design. <br />
-                  - Mise en place du pattern de couleur. <br />- Récupération
-                  local de photo.
-                </p>
                 <a
                   href="https://github.com/Yanguel/Otys-Barber"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <p>
+                    - Création du design. <br />
+                    - Mise en place du pattern de couleur. <br />- Récupération
+                    local de photo.
+                  </p>
                   <img src={GitHub} alt="Github" className="githubLogo"></img>
                 </a>
               </div>

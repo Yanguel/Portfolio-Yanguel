@@ -1,3 +1,4 @@
+/*sass --watch src/styles/scss/quisuisje.scss src/styles/css/quisuisje.css */
 @import './mixins/mixins';
 @import './placeholders/placeholders';
 @import './variables/variable';
@@ -8,7 +9,6 @@
   position: relative;
   padding-top: 100px;
   padding-bottom: 100px;
-  height: 100vh !important;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -83,4 +83,37 @@ h1 {
 }
 
 /* ------------------- */
+
+/* Responsive Tablette */
+@media screen and (max-width: 1059px) and (min-width: 519px) {
+  .CV {
+    display: none;
+    .photoCv {
+      display: none;
+    }
+  }
+  #quiSuisJe {
+    .pQuiSuisJe {
+      font-size: 20px !important;
+    }
+    h1 {
+      font-size: 30px;
+    }
+  }
+  .iconeFlecheQuiSuisJe {
+    bottom: 10%;
+    .arrow {
+      font-size: 40px;
+    }
+  }
+  .containerQuiSuisJe {
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+    width: 100% !important;
+  }
+}
+/* Responsive Téléphone */
+@media screen and (max-width: 519px) and (min-width: 320px) {
+}
+
 @import './keyframes/keyframes';

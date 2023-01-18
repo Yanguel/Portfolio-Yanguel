@@ -1,3 +1,5 @@
+/*sass --watch src/styles/scss/competences.scss src/styles/css/competences.css */
+
 @import './mixins/mixins';
 @import './placeholders/placeholders';
 @import './variables/variable';
@@ -94,4 +96,27 @@ h2 {
   display: flex;
   justify-content: center;
 }
+
+/* Responsive Tablette */
+@media screen and (max-width: 1024px) and (min-width: 520px) {
+  #containerCompetences {
+    margin: 5px;
+  }
+  .competences {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .containerLangage,
+  .containerAutres,
+  .framework,
+  .back-end {
+    width: 48%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Responsive Téléphone */
+@media screen and (max-width: 519px) and (min-width: 320px) {
+}
+
 @import './keyframes/keyframes';
