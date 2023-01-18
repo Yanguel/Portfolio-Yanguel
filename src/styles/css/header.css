@@ -230,7 +230,7 @@ header {
   }
 
   .containerTextIcone {
-    min-width: 60%;
+    min-width: 80%;
   }
 
   .divProfil {
@@ -246,6 +246,41 @@ header {
   }
 }
 /* Responsive Téléphone */
+@media screen and (max-width: 519px) {
+  .ulHeader {
+    flex-direction: column !important;
+  }
+  .ulHeader li:hover {
+    margin: 5px 0px 5px 0px;
+  }
+
+  .containerTextIcone {
+    min-width: 80%;
+  }
+
+  .containerTextHeader .textHeader {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .containerTextHeader .textHeader .titleHeaderDev {
+    line-height: 2;
+  }
+  .containerTextHeader .titleHeaderDev {
+    font-size: 20px;
+  }
+
+  .divProfil .profilHeader {
+    display: none !important;
+  }
+
+  .iconeFlecheHeader {
+    bottom: 18%;
+    left: 44%;
+  }
+  .iconeFlecheHeader .arrow {
+    font-size: 42px;
+  }
+}
 @-webkit-keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(0);

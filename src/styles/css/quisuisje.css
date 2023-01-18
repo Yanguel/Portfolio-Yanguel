@@ -9,10 +9,10 @@
   display: flex;
   align-items: center;
   flex-direction: row;
+  margin-left: 100px;
 }
 #quiSuisJe .containerQuiSuisJe {
   width: 50%;
-  margin-left: 100px;
 }
 #quiSuisJe .containerQuiSuisJe .titleQuiSuisJe {
   margin: 0px;
@@ -83,7 +83,7 @@ h1 {
 
 /* ------------------- */
 /* Responsive Tablette */
-@media screen and (max-width: 1059px) and (min-width: 425px) {
+@media screen and (max-width: 1059px) {
   .CV {
     display: none;
   }
@@ -91,8 +91,12 @@ h1 {
     display: none;
   }
 
+  #quiSuisJe {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
   #quiSuisJe .pQuiSuisJe {
-    font-size: 20px !important;
+    font-size: 20px;
   }
   #quiSuisJe h1 {
     font-size: 30px;
@@ -106,12 +110,25 @@ h1 {
   }
 
   .containerQuiSuisJe {
-    margin-left: 30px !important;
-    margin-right: 30px !important;
+    margin-left: 5px;
+    margin-right: 5px;
     width: 100% !important;
   }
 }
 /* Responsive Téléphone */
+@media screen and (max-width: 519px) {
+  .pQuiSuisJe {
+    font-size: 15px !important;
+  }
+
+  .iconeFlecheQuiSuisJe {
+    bottom: 5%;
+    left: 44%;
+  }
+  .iconeFlecheQuiSuisJe .arrow {
+    font-size: 42px;
+  }
+}
 @-webkit-keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(0);

@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*sass --watch src/styles/scss/contact.scss src/styles/css/contact.css */
 #contact {
   display: flex;
   flex-direction: column;
@@ -16,8 +18,22 @@
   margin-bottom: 40px;
 }
 
+.btnEmail {
+  background: rgb(3, 169, 244);
+  background: linear-gradient(100deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
+  border-radius: 11px;
+  box-shadow: 0 1px #444444;
+  padding: 20px 20px;
+  color: #ffffff;
+  display: inline-block;
+  font: normal bold 20px/1 "Open Sans", sans-serif;
+  text-align: center;
+  text-shadow: 1px 1px #000000;
+  cursor: pointer;
+}
+
 .titleContact {
-  font-size: 24px;
+  font-size: 25 px;
   color: white;
   text-decoration: underline;
   display: flex;
@@ -33,20 +49,6 @@
 
 h4 {
   font-size: 30px;
-}
-
-.btnEmail {
-  background: rgb(3, 169, 244);
-  background: linear-gradient(100deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
-  border-radius: 11px;
-  box-shadow: 0 1px #444444;
-  padding: 20px 45px;
-  color: #ffffff;
-  display: inline-block;
-  font: normal bold 20px/1 "Open Sans", sans-serif;
-  text-align: center;
-  text-shadow: 1px 1px #000000;
-  cursor: pointer;
 }
 
 .btnEmail:hover {
@@ -95,6 +97,23 @@ h4 {
   animation: scaling 0.5s infinite alternate linear;
 }
 
+/* Responsive Tablette */
+/* Responsive Téléphone */
+@media screen and (max-width: 540px) {
+  .socialMedia {
+    width: 80%;
+  }
+
+  .btnEmail {
+    width: 80%;
+    font: normal bold 15px/1 "Open Sans", sans-serif;
+  }
+
+  .pContact {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 @-webkit-keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(0);

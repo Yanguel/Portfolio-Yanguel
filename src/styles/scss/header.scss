@@ -238,7 +238,7 @@ header {
     }
   }
   .containerTextIcone {
-    min-width: 60%;
+    min-width: 80%;
   }
 
   .divProfil {
@@ -256,7 +256,40 @@ header {
 }
 
 /* Responsive Téléphone */
-@media screen and (max-width: 519px) and (min-width: 320px) {
+@media screen and (max-width: 519px) {
+  .ulHeader {
+    flex-direction: column !important;
+    li:hover {
+      margin: 5px 0px 5px 0px;
+    }
+  }
+  .containerTextIcone {
+    min-width: 80%;
+  }
+  .containerTextHeader {
+    .textHeader {
+      padding-left: 0px;
+      padding-right: 0px;
+      .titleHeaderDev {
+        line-height: 2;
+      }
+    }
+    .titleHeaderDev {
+      font-size: 20px;
+    }
+  }
+  .divProfil {
+    .profilHeader {
+      display: none !important;
+    }
+  }
+  .iconeFlecheHeader {
+    bottom: 18%;
+    left: 44%;
+    .arrow {
+      font-size: 42px;
+    }
+  }
 }
 
 @import './keyframes/keyframes';

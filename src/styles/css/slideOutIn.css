@@ -8,7 +8,7 @@
 .slide-in-out {
   visibility: hidden;
   opacity: 0;
-  /*transform: translateX(100%);*/
+  transform: translateX(100%);
   transition: all 0.4s ease-in-out;
 }
 .slide-in-out.in-view {

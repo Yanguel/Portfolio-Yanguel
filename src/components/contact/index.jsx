@@ -30,7 +30,9 @@ function Contact() {
             />
           </div>
           <a href="mailto:yanguelcornillet@yahoo.com">
-            <button className="btnEmail">Yanguelcornillet@yahoo.com</button>
+            <button className="btnEmail">
+              <p className="btnP">Yanguelcornillet@yahoo.com</p>
+            </button>
           </a>
         </div>
 

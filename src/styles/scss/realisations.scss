@@ -211,4 +211,31 @@ h3 {
   opacity: 0;
 }
 
+/* Responsive Téléphone */
+@media screen and (max-width: 375px) {
+  .card-image,
+  .card-image2,
+  .card-image3,
+  .card-image4,
+  .card-image5,
+  .card-image6 {
+    width: 220px !important;
+  }
+  .githubLogo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+/* Responsive Téléphone */
+@media screen and (max-width: 320px) {
+  .card-image,
+  .card-image2,
+  .card-image3,
+  .card-image4,
+  .card-image5,
+  .card-image6 {
+    width: 187px !important;
+  }
+}
 @import './keyframes/keyframes';

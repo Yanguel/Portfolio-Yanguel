@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*sass --watch src/styles/scss/realisations.scss src/styles/css/realisations.css */
 .card-back .card-icons a {
   display: flex;
   align-items: center;
@@ -244,6 +246,34 @@ h3 {
   opacity: 0;
 }
 
+/* Responsive Téléphone */
+@media screen and (max-width: 375px) {
+  .card-image,
+.card-image2,
+.card-image3,
+.card-image4,
+.card-image5,
+.card-image6 {
+    width: 220px !important;
+  }
+
+  .githubLogo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+/* Responsive Téléphone */
+@media screen and (max-width: 320px) {
+  .card-image,
+.card-image2,
+.card-image3,
+.card-image4,
+.card-image5,
+.card-image6 {
+    width: 187px !important;
+  }
+}
 @-webkit-keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(0);
@@ -377,5 +407,13 @@ h3 {
   }
 }
 /* ------------------------------------------------*/
+@keyframes scaling {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 
 /*# sourceMappingURL=realisations.css.map */

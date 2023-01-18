@@ -107,7 +107,7 @@ h2 {
 }
 
 /* Responsive Tablette */
-@media screen and (max-width: 1024px) and (min-width: 520px) {
+@media screen and (max-width: 1024px) {
   #containerCompetences {
     margin: 5px;
   }
@@ -115,17 +115,40 @@ h2 {
   .competences {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
   .containerLangage,
 .containerAutres,
 .framework,
 .back-end {
-    width: 48%;
+    width: 40%;
     margin-bottom: 10px;
   }
 }
 /* Responsive Téléphone */
+@media screen and (max-width: 425px) {
+  .progress-bar {
+    width: 20px !important;
+  }
+
+  .titleAutres,
+.titleBack-end,
+.titleFramework,
+.titleLangage {
+    font-size: 15px;
+    border-radius: 30px;
+  }
+}
+/* Responsive Téléphone */
+@media screen and (max-width: 365px) {
+  .containerLangage,
+.containerAutres,
+.framework,
+.back-end {
+    padding: 0;
+  }
+}
 @-webkit-keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(0);

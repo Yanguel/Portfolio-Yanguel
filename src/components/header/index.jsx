@@ -21,15 +21,15 @@ function Header() {
           </li>
 
           <li>
-            <a href="#realisations-Title" className="navLi">
-              {' '}
-              Réalisations{' '}
-            </a>
-          </li>
-          <li>
             <a href="#containerCompetences" className="navLi">
               {' '}
               Compétences{' '}
+            </a>
+          </li>
+          <li>
+            <a href="#realisations-Title" className="navLi">
+              {' '}
+              Réalisations{' '}
             </a>
           </li>
           <li>

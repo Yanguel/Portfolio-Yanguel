@@ -1,11 +1,9 @@
-@charset "UTF-8";
 footer {
   color: white;
   background-image: url(../../assets/wave.svg);
   background-size: cover;
   height: 14.625rem;
 }
-
 .containerFooter {
   display: flex;
   flex-direction: row;
@@ -14,7 +12,6 @@ footer {
   padding-top: 40px;
   margin: 0px 10px 0px 10px;
 }
-
 .adresseNom {
   display: flex;
   flex-direction: column;
@@ -22,7 +19,6 @@ footer {
   margin-bottom: 20px;
   font-size: 20px;
 }
-
 .nameFooter {
   font-size: 20px;
   margin-bottom: 10px;
@@ -32,25 +28,24 @@ footer {
 @media screen and (max-width: 483px) {
   .containerFooter {
     flex-direction: column;
-  }
-  .containerFooter .adresseNom {
-    margin-bottom: 0px;
-  }
-  .containerFooter .firstP,
-.containerFooter .secondP {
-    text-align: center;
+    .adresseNom {
+      margin-bottom: 0px;
+    }
+    .firstP,
+    .secondP {
+      text-align: center;
+    }
   }
 }
+
 /* Responsive Téléphone */
 @media screen and (max-width: 425px) {
   .containerFooter {
     flex-direction: column;
     text-align: center;
-  }
-  .containerFooter .firstP,
-.containerFooter .secondP {
-    font-size: 15px;
+    .firstP,
+    .secondP {
+      font-size: 15px;
+    }
   }
 }
-
-/*# sourceMappingURL=footer.css.map */
