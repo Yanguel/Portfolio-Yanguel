@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'JosefinSlab';
+  src: url(../fonts/JosefinSlab-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: 'Didot';
+  src: url(../fonts/GFSDidot-Regular.ttf);
+}
+
 footer {
   color: white;
   background-image: url(../../assets/wave.svg);
@@ -20,8 +29,13 @@ footer {
   font-size: 20px;
 }
 .nameFooter {
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 10px;
+  font-family: JosefinSlab;
+}
+.firstP,
+.copyright {
+  font-family: Didot;
 }
 
 /* Responsive fin Tablette */

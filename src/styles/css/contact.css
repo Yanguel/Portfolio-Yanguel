@@ -1,5 +1,13 @@
 @charset "UTF-8";
 /*sass --watch src/styles/scss/contact.scss src/styles/css/contact.css */
+@font-face {
+  font-family: "JosefinSlab";
+  src: url(../fonts/JosefinSlab-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Didot";
+  src: url(../fonts/GFSDidot-Regular.ttf);
+}
 #contact {
   display: flex;
   flex-direction: column;
@@ -26,7 +34,8 @@
   padding: 20px 20px;
   color: #ffffff;
   display: inline-block;
-  font: normal bold 20px/1 "Open Sans", sans-serif;
+  font-family: Didot;
+  font-size: 20px;
   text-align: center;
   text-shadow: 1px 1px #000000;
   cursor: pointer;
@@ -39,16 +48,18 @@
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  font-family: JosefinSlab;
 }
 
 .pContact {
   color: white;
   font-size: 20px;
+  font-family: Didot;
   margin-bottom: 45px;
 }
 
 h4 {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .btnEmail:hover {
@@ -60,9 +71,10 @@ h4 {
   margin-bottom: 50px;
 }
 .socialMedia .trouvezMoi {
-  font-size: 20px;
+  font-size: 23px;
   text-align: center;
   margin-bottom: 20px;
+  font-family: JosefinSlab;
 }
 .socialMedia .linkedin {
   background-color: #0077b5;
@@ -79,6 +91,7 @@ h4 {
   display: flex;
   align-items: center;
   border-radius: 15px;
+  font-family: Didot;
 }
 
 .githubContact {
@@ -112,6 +125,10 @@ h4 {
   .pContact {
     margin-left: 10px;
     margin-right: 10px;
+  }
+
+  .firstP {
+    margin-bottom: 15px;
   }
 }
 @-webkit-keyframes slide-bottom {

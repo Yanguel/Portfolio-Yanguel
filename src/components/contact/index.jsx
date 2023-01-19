@@ -9,7 +9,6 @@ function Contact() {
   useSlideInOut(elementRef)
   return (
     <section id="contact">
-      {/*<img src={Wave2} alt="" className="wave2" />*/}
       <div className="containerContact">
         <div className="textAndEmail">
           {/* Lié à l'animation slide */}

@@ -4,8 +4,12 @@
 @import './variables/variable';
 
 @font-face {
-  font-family: 'AbrilFatFace';
-  src: url(../../styles/fonts/AbrilFatface-Regular.ttf);
+  font-family: 'JosefinSlab';
+  src: url(../fonts/JosefinSlab-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: 'Didot';
+  src: url(../fonts/GFSDidot-Regular.ttf);
 }
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Source+Sans+Pro');
 
@@ -56,10 +60,13 @@ header {
   border-radius: 30px;
   text-align: center;
   cursor: pointer;
+  padding: 7px;
 }
 .navHeader {
   width: 50%;
   margin-top: 50px;
+  font-family: JosefinSlab;
+  font-size: 23px;
   .ulHeader {
     display: flex;
     flex-direction: row;
@@ -67,7 +74,7 @@ header {
     align-items: center;
     flex-wrap: wrap;
     list-style: none;
-    font-size: 20px;
+
     .navLi {
       color: white;
     }
@@ -82,7 +89,7 @@ header {
     padding-bottom: 30px;
     padding-top: 30px;
     .containerTitleHeader {
-      font-family: AbrilFatFace;
+      font-family: Didot;
       font-size: 2.26rem;
       text-transform: uppercase;
       flex-wrap: wrap;
@@ -128,12 +135,14 @@ header {
   padding-right: 30px;
   line-height: normal;
   .titleHeaderDev {
-    font-size: 24px;
+    font-size: 28px;
+    font-family: JosefinSlab;
     margin-bottom: 10px;
   }
   .presentation {
     margin-top: 20px;
     line-height: 40px;
+    font-family: Didot;
   }
 }
 

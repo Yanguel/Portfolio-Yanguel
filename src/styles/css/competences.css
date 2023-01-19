@@ -9,6 +9,14 @@
   justify-content: center;
 }
 
+@font-face {
+  font-family: "JosefinSlab";
+  src: url(../fonts/JosefinSlab-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Didot";
+  src: url(../fonts/GFSDidot-Regular.ttf);
+}
 #containerCompetences {
   color: white;
   margin: 50px;
@@ -19,10 +27,11 @@
 .competences {
   display: flex;
   justify-content: space-between;
+  font-family: Didot;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .titleCompetences {
@@ -31,6 +40,7 @@ h2 {
   text-decoration: underline;
   font-size: 24px;
   text-align: center;
+  font-family: JosefinSlab;
 }
 
 .titleLangage,
@@ -54,13 +64,26 @@ h2 {
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 24px;
   padding: 10px;
+  width: 22%;
 }
 
-.containerLangage,
-.containerAutres,
-.back-end,
-.framework {
-  width: 22%;
+.html,
+.css,
+.javascript,
+.react,
+.sass,
+.bootstrap,
+.postman,
+.insomnia,
+.nodejs,
+.mongoDB,
+.figma,
+.github,
+.seo,
+.photoshop,
+.wordpress {
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
 }
 
 .overFlash:hover {
@@ -94,6 +117,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .littleMargin {

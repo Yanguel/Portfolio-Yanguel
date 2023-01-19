@@ -1,7 +1,6 @@
 import '../../styles/css/quisuisje.css'
 import CV from '../../assets/CVYanguelCornillet.pdf'
 import PhotoCv from '../../assets/CVYanguelCornillet.png'
-// import Slider from '../scroll'
 import { useRef } from 'react'
 import useSlideInOut from '../slideRightIn'
 
@@ -10,7 +9,6 @@ function QuiSuisJe() {
   useSlideInOut(elementRef)
   return (
     <section id="quiSuisJe">
-      {/*<img src={Wave2} alt="" className="wave2" />*/}
       <div className="containerQuiSuisJe">
         {/* Lié à l'animation slide */}
         <div ref={elementRef} className="slide-in-out titleQuiSuisJe">
@@ -39,7 +37,7 @@ function QuiSuisJe() {
           de mon parcours et de mes compétences.
         </p>
         <a href={CV} download>
-          <button className="btnCV"> télécharger mon CV </button>
+          <button className="btnCV"> Télécharger mon CV </button>
         </a>
       </div>
       <div className="CV">

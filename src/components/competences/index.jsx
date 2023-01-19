@@ -57,7 +57,6 @@ function Competences() {
                 scrollArea={myRef}
               />
             </div>
-            <div className="separateurCompetences">-------------------</div>
             <div className="css centerTotal">
               <img src={Css} alt="logo Css" className="sizeLogo"></img>
               <span className="littleMargin">Css </span>
@@ -79,7 +78,6 @@ function Competences() {
                 scrollArea={myRef}
               />
             </div>
-            <div className="separateurCompetences">-------------------</div>
             <div className="javascript centerTotal">
               <img
                 src={Javascript}
@@ -132,7 +130,6 @@ function Competences() {
                 scrollArea={myRef}
               />
             </div>
-            <div className="separateurCompetences">-------------------</div>
             <div className="sass centerTotal">
               <img src={Sass} alt="logo Sass" className="sizeLogo"></img>
               <span className="littleMargin">Sass</span>
@@ -154,7 +151,6 @@ function Competences() {
                 scrollArea={myRef}
               />
             </div>
-            <div className="separateurCompetences">-------------------</div>
             <div className="bootstrap centerTotal">
               <img
                 src={Bootstrap}
@@ -210,7 +206,6 @@ function Competences() {
                 scrollArea={myRef}
               />
             </div>
-            <div className="separateurCompetences">-------------------</div>
             <div className="insomnia centerTotal">
               <img
                 src={Insomnia}
@@ -236,7 +231,6 @@ function Competences() {
                 scrollArea={myRef}
               />
             </div>
-            <div className="separateurCompetences">-------------------</div>
             <div className="nodejs centerTotal">
               <img
                 src={NodeJs}
@@ -262,7 +256,6 @@ function Competences() {
                 scrollArea={myRef}
               />
             </div>
-            <div className="separateurCompetences">-------------------</div>
             <div className="mongoDB centerTotal">
               <img src={Mongodb} alt="logo MongoDb" className=" mongodb"></img>
               <span className="littleMargin">MongoDB</span>
@@ -310,7 +303,6 @@ function Competences() {
                 scrollArea={myRef}
               />
             </div>
-            <div className="separateurCompetences">-------------------</div>
             <div className="github centerTotal">
               <img
                 src={Github}
@@ -336,7 +328,6 @@ function Competences() {
                 scrollArea={myRef}
               />
             </div>
-            <div className="separateurCompetences">-------------------</div>
             <div className="seo centerTotal">
               <img src={SeoLogo} alt="logo seo" className="sizeLogo"></img>
               <span className="littleMargin">Marketing Seo</span>
@@ -358,7 +349,6 @@ function Competences() {
                 scrollArea={myRef}
               />
             </div>
-            <div className="separateurCompetences">-------------------</div>
             <div className="photoshop centerTotal">
               <img
                 src={Photoshop}
@@ -384,7 +374,6 @@ function Competences() {
                 scrollArea={myRef}
               />
             </div>
-            <div className="separateurCompetences">-------------------</div>
             <div className="wordpress centerTotal">
               <img
                 src={WordPress}

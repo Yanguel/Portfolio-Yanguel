@@ -14,6 +14,14 @@
   background-position: center center;
 }
 
+@font-face {
+  font-family: "JosefinSlab";
+  src: url(../fonts/JosefinSlab-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Didot";
+  src: url(../fonts/GFSDidot-Regular.ttf);
+}
 #realisations-Title {
   display: flex;
   flex-direction: column;
@@ -21,6 +29,7 @@
   padding-bottom: 100px;
 }
 #realisations-Title .titleRealisations {
+  font-family: JosefinSlab;
   font-size: 24px;
   margin-bottom: 45px;
   color: white;
@@ -52,7 +61,7 @@
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 * {
@@ -132,30 +141,12 @@ h3 {
 .card-content5 {
   z-index: 1;
   color: white;
-}
-
-.card-front .card-content p {
+  font-family: Didot;
   color: #ececec;
 }
 
-.card-front2 .card-content2 p {
-  color: #ececec;
-}
-
-.card-front3 .card-content3 p {
-  color: #ececec;
-}
-
-.card-front4 .card-content4 p {
-  color: #ececec;
-}
-
-.card-front5 .card-content5 p {
-  color: #ececec;
-}
-
-.card-front6 .card-content6 p {
-  color: #ececec;
+.titleCardRealisation {
+  font-family: JosefinSlab;
 }
 
 .card-back,
@@ -172,10 +163,14 @@ h3 {
   justify-content: center;
 }
 
+.card-content-back {
+  font-family: Didot;
+}
+
 .card-back .card-image {
   width: 237px;
   height: 172px;
-  background-image: url("../../assets/otysbarber2.PNG");
+  background-image: url("../../assets/otysbarber3.PNG");
 }
 
 .card-back2 .card-image2 {
@@ -255,12 +250,6 @@ h3 {
 .card-image5,
 .card-image6 {
     width: 220px !important;
-  }
-
-  .githubLogo {
-    position: absolute;
-    bottom: 0;
-    right: 0;
   }
 }
 /* Responsive Téléphone */

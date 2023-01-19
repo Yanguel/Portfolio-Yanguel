@@ -1,5 +1,13 @@
 @charset "UTF-8";
 /*sass --watch src/styles/scss/quisuisje.scss src/styles/css/quisuisje.css */
+@font-face {
+  font-family: "JosefinSlab";
+  src: url(../fonts/JosefinSlab-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Didot";
+  src: url(../fonts/GFSDidot-Regular.ttf);
+}
 #quiSuisJe {
   color: white;
   text-align: center;
@@ -18,6 +26,7 @@
   margin: 0px;
   font-size: 24px;
   text-decoration: underline;
+  font-family: JosefinSlab;
 }
 #quiSuisJe .containerQuiSuisJe .pQuiSuisJe {
   font-size: 20px;
@@ -26,6 +35,7 @@
   position: relative;
   z-index: 7;
   line-height: 35px;
+  font-family: Didot;
 }
 #quiSuisJe .containerQuiSuisJe .btnCV {
   background: rgb(3, 169, 244);
@@ -35,10 +45,11 @@
   padding: 20px 45px;
   color: #ffffff;
   display: inline-block;
-  font: normal bold 20px/1 "Open Sans", sans-serif;
   text-align: center;
   text-shadow: 1px 1px #000000;
   cursor: pointer;
+  font-family: Didot;
+  font-size: 20px;
 }
 #quiSuisJe .containerQuiSuisJe .btnCV:hover {
   animation: rotationColor 0.8s linear infinite both;
@@ -72,7 +83,7 @@
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 /* ------ Animation Qui suis je ----*/

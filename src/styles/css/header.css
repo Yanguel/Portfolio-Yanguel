@@ -8,8 +8,12 @@
 }
 
 @font-face {
-  font-family: "AbrilFatFace";
-  src: url(../../styles/fonts/AbrilFatface-Regular.ttf);
+  font-family: "JosefinSlab";
+  src: url(../fonts/JosefinSlab-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Didot";
+  src: url(../fonts/GFSDidot-Regular.ttf);
 }
 header {
   background-image: url(../../assets/pc-portable.jpg);
@@ -58,11 +62,14 @@ header {
   border-radius: 30px;
   text-align: center;
   cursor: pointer;
+  padding: 7px;
 }
 
 .navHeader {
   width: 50%;
   margin-top: 50px;
+  font-family: JosefinSlab;
+  font-size: 23px;
 }
 .navHeader .ulHeader {
   display: flex;
@@ -71,7 +78,6 @@ header {
   align-items: center;
   flex-wrap: wrap;
   list-style: none;
-  font-size: 20px;
 }
 .navHeader .ulHeader .navLi {
   color: white;
@@ -88,7 +94,7 @@ header {
   padding-top: 30px;
 }
 .containerTextIcone .containerTextHeader .containerTitleHeader {
-  font-family: AbrilFatFace;
+  font-family: Didot;
   font-size: 2.26rem;
   text-transform: uppercase;
   flex-wrap: wrap;
@@ -132,12 +138,14 @@ header {
   line-height: normal;
 }
 .textHeader .titleHeaderDev {
-  font-size: 24px;
+  font-size: 28px;
+  font-family: JosefinSlab;
   margin-bottom: 10px;
 }
 .textHeader .presentation {
   margin-top: 20px;
   line-height: 40px;
+  font-family: Didot;
 }
 
 /*----------BLUR--------------*/

@@ -4,6 +4,15 @@
 @import './placeholders/placeholders';
 @import './variables/variable';
 
+@font-face {
+  font-family: 'JosefinSlab';
+  src: url(../fonts/JosefinSlab-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: 'Didot';
+  src: url(../fonts/GFSDidot-Regular.ttf);
+}
+
 #containerCompetences {
   color: white;
   margin: 50px;
@@ -13,9 +22,10 @@
 .competences {
   display: flex;
   justify-content: space-between;
+  font-family: Didot;
 }
 h2 {
-  font-size: 30px;
+  font-size: 35px;
 }
 .titleCompetences {
   margin-top: 0;
@@ -23,6 +33,7 @@ h2 {
   text-decoration: underline;
   font-size: 24px;
   text-align: center;
+  font-family: JosefinSlab;
 }
 .titleLangage,
 .titleAutres,
@@ -44,12 +55,25 @@ h2 {
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 24px;
   padding: 10px;
-}
-.containerLangage,
-.containerAutres,
-.back-end,
-.framework {
   width: 22%;
+}
+.html,
+.css,
+.javascript,
+.react,
+.sass,
+.bootstrap,
+.postman,
+.insomnia,
+.nodejs,
+.mongoDB,
+.figma,
+.github,
+.seo,
+.photoshop,
+.wordpress {
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
 }
 .overFlash:hover {
   -webkit-box-shadow: 12px -5px 15px 5px #80c7ff, 12px 10px 15px 7px #e488ff,
@@ -81,6 +105,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .littleMargin {
   margin-left: 5px;
