@@ -161,7 +161,7 @@ function Competences() {
               <ProgressBar
                 width="250px"
                 height="10px"
-                fontColor="rgb(125 89 182);"
+                fontColor="rgb(125 89 182)"
                 trackWidth="10"
                 percentage="40"
                 trackPathColor="grey"

@@ -2,6 +2,7 @@ import React from 'react'
 import Profil from '../../assets/profil.jpeg'
 import Loader from '../loader'
 import '../../styles/css/header.css'
+
 function Header() {
   return (
     <header>
