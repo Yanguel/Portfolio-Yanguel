@@ -12,7 +12,7 @@ root.render(
   <BrowserRouter>
     <Header />
     <Routes>
-      <Route path="/" element={<Acceuil />} />
+      <Route path="/Portfolio-Yanguel/" element={<Acceuil />} />
     </Routes>
     <Footer />
   </BrowserRouter>
