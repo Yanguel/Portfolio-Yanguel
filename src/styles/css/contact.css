@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/*sass --watch src/styles/scss/contact.scss src/styles/css/contact.css */
+@font-face {
+  font-family: "JosefinSlab";
+  src: url(../fonts/JosefinSlab-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Didot";
+  src: url(../fonts/GFSDidot-Regular.ttf);
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#contact .containerContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contact .containerContact .textAndEmail {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.btnEmail {
+  background: rgb(3, 169, 244);
+  background: linear-gradient(100deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
+  border-radius: 11px;
+  box-shadow: 0 1px #444444;
+  padding: 20px 20px;
+  color: #ffffff;
+  display: inline-block;
+  font-family: Didot;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 1px 1px #000000;
+  cursor: pointer;
+}
+
+.titleContact {
+  font-size: 25 px;
+  color: white;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-family: JosefinSlab;
+}
+
+.pContact {
+  color: white;
+  font-size: 20px;
+  font-family: Didot;
+  margin-bottom: 45px;
+}
+
+h4 {
+  font-size: 35px;
+}
+
+.btnEmail:hover {
+  animation: rotationColor 0.8s linear infinite both;
+}
+
+.socialMedia {
+  width: 50%;
+  margin-bottom: 50px;
+}
+.socialMedia .trouvezMoi {
+  font-size: 23px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: JosefinSlab;
+}
+.socialMedia .linkedin {
+  background-color: #0077b5;
+}
+.socialMedia .logoLinkedin,
+.socialMedia .logoGithub {
+  padding: 15px;
+  width: 70px;
+  height: 70px;
+}
+
+.linkedin,
+.githubContact {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  font-family: Didot;
+}
+
+.githubContact {
+  background-color: black;
+  color: white;
+}
+
+.logoGithub {
+  border-radius: 15px;
+  width: 65px;
+}
+
+.enveloppe {
+  width: 40px;
+  margin-bottom: 15px;
+  animation: scaling 0.5s infinite alternate linear;
+}
+
+/* Responsive Tablette */
+/* Responsive Téléphone */
+@media screen and (max-width: 540px) {
+  .socialMedia {
+    width: 80%;
+  }
+
+  .btnEmail {
+    width: 80%;
+    font: normal bold 15px/1 "Open Sans", sans-serif;
+  }
+
+  .pContact {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .firstP {
+    margin-bottom: 15px;
+  }
+}
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+@keyframes text-animation {
+  0% {
+    margin-top: 0;
+  }
+  10% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: -5.62rem;
+  }
+  30% {
+    margin-top: -5.62rem;
+  }
+  40% {
+    margin-top: -11.24rem;
+  }
+  60% {
+    margin-top: -11.24rem;
+  }
+  70% {
+    margin-top: -5.62rem;
+  }
+  80% {
+    margin-top: -5.62rem;
+  }
+  90% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+/*----------------QuiSuisJe--------------------------*/
+@keyframes rotationColor {
+  from, to {
+    background: linear-gradient(0deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
+  }
+  10% {
+    background: linear-gradient(36deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
+  }
+  20% {
+    background: linear-gradient(72deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
+  }
+  30% {
+    background: linear-gradient(108deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
+  }
+  40% {
+    background: linear-gradient(144deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
+  }
+  50% {
+    background: linear-gradient(180deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
+  }
+  60% {
+    background: linear-gradient(216deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
+  }
+  70% {
+    background: linear-gradient(252deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
+  }
+  80% {
+    background: linear-gradient(288deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
+  }
+  90% {
+    background: linear-gradient(324deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
+  }
+  100% {
+    background: linear-gradient(360deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
+  }
+}
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* ------------------------------------------------*/
+@keyframes scaling {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/*------------------------------------------------------*/
+
+/*# sourceMappingURL=contact.css.map */

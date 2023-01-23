@@ -1,0 +1,285 @@
+@charset "UTF-8";
+/*sass --watch src/styles/scss/quisuisje.scss src/styles/css/quisuisje.css */
+@font-face {
+  font-family: "JosefinSlab";
+  src: url(../fonts/JosefinSlab-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Didot";
+  src: url(../fonts/GFSDidot-Regular.ttf);
+}
+#quiSuisJe {
+  color: white;
+  text-align: center;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 100px;
+}
+#quiSuisJe .containerQuiSuisJe {
+  width: 50%;
+}
+#quiSuisJe .containerQuiSuisJe .titleQuiSuisJe {
+  margin: 0px;
+  font-size: 24px;
+  text-decoration: underline;
+  font-family: JosefinSlab;
+}
+#quiSuisJe .containerQuiSuisJe .pQuiSuisJe {
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 7;
+  line-height: 35px;
+  font-family: Didot;
+}
+#quiSuisJe .containerQuiSuisJe .btnCV {
+  background: rgb(3, 169, 244);
+  background: linear-gradient(100deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
+  border-radius: 11px;
+  box-shadow: 0 1px #444444;
+  padding: 20px 45px;
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  text-shadow: 1px 1px #000000;
+  cursor: pointer;
+  font-family: Didot;
+  font-size: 20px;
+}
+#quiSuisJe .containerQuiSuisJe .btnCV:hover {
+  animation: rotationColor 0.8s linear infinite both;
+}
+
+.CV {
+  width: 50%;
+}
+.CV .photoCv {
+  width: 50%;
+}
+
+.photoCv:hover {
+  -webkit-box-shadow: -10px 0px 13px -7px white, 10px 0px 13px -7px white, 0px 0px 33px 18px rgb(0, 0, 0);
+  box-shadow: -10px 0px 13px -7px #123650, 10px 0px 13px -7px #123650, 0px 0px 33px 18px rgb(196, 196, 196);
+}
+
+.iconeFlecheQuiSuisJe {
+  position: absolute;
+  bottom: 5%;
+  left: 48%;
+}
+.iconeFlecheQuiSuisJe .arrow {
+  font-size: 50px;
+}
+
+.header,
+.finisher-header {
+  width: 100%;
+  height: 300px;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+/* ------ Animation Qui suis je ----*/
+.slide-in-right {
+  -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* ------------------- */
+/* Responsive Tablette */
+@media screen and (max-width: 1059px) {
+  .CV {
+    display: none;
+  }
+  .CV .photoCv {
+    display: none;
+  }
+
+  #quiSuisJe {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+  #quiSuisJe .pQuiSuisJe {
+    font-size: 20px;
+  }
+  #quiSuisJe h1 {
+    font-size: 30px;
+  }
+
+  .iconeFlecheQuiSuisJe {
+    bottom: 10%;
+  }
+  .iconeFlecheQuiSuisJe .arrow {
+    font-size: 40px;
+  }
+
+  .containerQuiSuisJe {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100% !important;
+  }
+}
+/* Responsive Téléphone */
+@media screen and (max-width: 519px) {
+  .pQuiSuisJe {
+    font-size: 15px !important;
+  }
+
+  .iconeFlecheQuiSuisJe {
+    bottom: 5%;
+    left: 44%;
+  }
+  .iconeFlecheQuiSuisJe .arrow {
+    font-size: 42px;
+  }
+}
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+@keyframes text-animation {
+  0% {
+    margin-top: 0;
+  }
+  10% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: -5.62rem;
+  }
+  30% {
+    margin-top: -5.62rem;
+  }
+  40% {
+    margin-top: -11.24rem;
+  }
+  60% {
+    margin-top: -11.24rem;
+  }
+  70% {
+    margin-top: -5.62rem;
+  }
+  80% {
+    margin-top: -5.62rem;
+  }
+  90% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+/*----------------QuiSuisJe--------------------------*/
+@keyframes rotationColor {
+  from, to {
+    background: linear-gradient(0deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
+  }
+  10% {
+    background: linear-gradient(36deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
+  }
+  20% {
+    background: linear-gradient(72deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
+  }
+  30% {
+    background: linear-gradient(108deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
+  }
+  40% {
+    background: linear-gradient(144deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
+  }
+  50% {
+    background: linear-gradient(180deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
+  }
+  60% {
+    background: linear-gradient(216deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
+  }
+  70% {
+    background: linear-gradient(252deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
+  }
+  80% {
+    background: linear-gradient(288deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
+  }
+  90% {
+    background: linear-gradient(324deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
+  }
+  100% {
+    background: linear-gradient(360deg, rgba(3, 169, 244, 0.8) 0%, rgba(47, 47, 47, 0.8) 41%, rgba(244, 65, 165, 0.8) 60%, rgba(3, 169, 244, 0.8) 87%);
+  }
+}
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* ------------------------------------------------*/
+@keyframes scaling {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/*# sourceMappingURL=quisuisje.css.map */

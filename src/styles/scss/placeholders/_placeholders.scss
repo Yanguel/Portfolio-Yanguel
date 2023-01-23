@@ -1,0 +1,17 @@
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+%flex-wrapcenter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+%cardBorderBackground {
+  margin: 0 auto;
+  border: solid 1px #cecece;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center center;
+}
