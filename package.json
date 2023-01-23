@@ -10,6 +10,7 @@
     "react-animated-progress-bar": "^1.1.2",
     "react-dom": "^18.2.0",
     "react-flip-move": "^3.0.5",
+    "react-router-dom": "^6.7.0",
     "react-scripts": "5.0.1",
     "react-transition-group": "^4.4.5",
     "sass": "^1.57.1",

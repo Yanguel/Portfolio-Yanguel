@@ -1,22 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import Acceuil from './pages/accueil'
 import Header from './components/header'
-import QuiSuisJe from './components/quisuisje'
-import Competences from './components/competences'
-import Realisations from './components/realisations'
-import Contact from './components/contact'
 import Footer from './components/footer'
 import './styles/css/racine.css'
 import './styles/css/normalize.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <Header />
-    <QuiSuisJe />
-    <Competences />
-    <Realisations />
-    <Contact />
+    <Routes>
+      <Route path="/" element={<Acceuil />} />
+    </Routes>
     <Footer />
-  </React.StrictMode>
+  </BrowserRouter>
 )
